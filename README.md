@@ -2,6 +2,58 @@
 
 Personal Vial/QMK userspace for the standard Keebart Corne Choc Pro with OLED displays.
 
+## Keymap at a glance
+
+`tap/hold` marks dual-role keys. `▽` is transparent and `×` is disabled.
+
+### Base
+
+```text
+ Tab       Q       W       E       R       T     Ctrl | Ctrl      Y       U       I       O       P      Del
+Esc/Nav  A/Ctrl  S/Opt   D/Cmd   F/Shift   G     Opt  | Opt       H     J/Shift K/Cmd   L/Opt   ;/Ctrl    '
+ Shift     Z       X       C       V       B               |      N       M       ,       .       /     Function
+                    OneCtrl  Enter/Cmd  Tab/Num | Bsp/Nav  Space  OneShift
+```
+
+The home-row modifiers are macOS CAGS: `Ctrl`, `Option`, `Command`, `Shift`, mirrored across both hands. Tap the Caps position for Escape or hold it for Navigate.
+
+### Numbers
+
+Hold `Tab/Num`:
+
+```text
+  ▽       !       @       #       $       %      ▽  |  ▽       ^       &       *       (       )       ▽
+  ▽       1       2       3       4       5      ▽  |  ▽       6       7       8       9       0       ▽
+  ▽       ×       ~       `       [       {         |          }       ]       ,       .       /       ▽
+                              ▽       ▽       Num |  ▽       ▽       :
+```
+
+### Navigate
+
+Hold `Esc/Nav` or `Bsp/Nav`:
+
+```text
+  ▽    Cmd1   Cmd2   Cmd3   Cmd4   Cmd5    ▽  |  ▽   PrevTab NextTab   ×       \\      |       ▽
+  ▽    Home    End     -      =    PgDn    ▽  |  ▽    Left    Down     Up    Right   Menu     ▽
+  ▽      <      >    Cmd-C  Cmd-V    ;        |      Play    Prev    Next   Vol-    Vol+     ▽
+                              ▽       ▽       ▽ | Nav      ▽       ▽
+```
+
+The physical H/J/K/L positions become Left/Down/Up/Right. Q–T send `Command+1…5`; Y/U move between tabs.
+
+### Function
+
+Tap Function for one key or hold it while pressing another:
+
+```text
+ F1       F2      F3      F4      F5   F6    × | ×    F7   F8   F9   F10  F11  F12
+RGB Tog  Hue+    Sat+    Val+      ×    ×    × | ×     ×    ×    ×     ×    ×    ×
+RGB Mod  Hue-    Sat-    Val-      ×    ×      |      ×    ×    ×     ×   Boot   ▽
+                              ▽     ▽     ▽ | ▽     ▽     ▽
+```
+
+See the [detailed layout guide](docs/layout.md) for shortcuts, layer behavior, and tap-hold tuning.
+
 ## Firmware
 
 GitHub Actions builds `keebart/corne_choc_pro/standard:travis_oled` against the pinned [`traviscrist/vial-qmk-keebart`](https://github.com/traviscrist/vial-qmk-keebart) firmware revision. Successful pushes publish a UF2 artifact.
