@@ -10,7 +10,7 @@
         "KC_E",
         "KC_R",
         "KC_T",
-        "KC_LCTRL"
+        "QK_REP"
       ],
       [
         "LT2(KC_ESCAPE)",
@@ -46,7 +46,7 @@
         "KC_I",
         "KC_U",
         "KC_Y",
-        "KC_RCTRL"
+        "QK_AREP"
       ],
       [
         "KC_QUOTE",
@@ -78,16 +78,16 @@
     ],
     [
       [
-        "KC_TRNS",
+        "LSFT(KC_GRAVE)",
         "LSFT(KC_1)",
         "LSFT(KC_2)",
         "LSFT(KC_3)",
         "LSFT(KC_4)",
         "LSFT(KC_5)",
-        "KC_TRNS"
+        "QK_LLCK"
       ],
       [
-        "KC_TRNS",
+        "KC_GRAVE",
         "KC_1",
         "KC_2",
         "KC_3",
@@ -96,10 +96,10 @@
         "KC_TRNS"
       ],
       [
-        "KC_TRNS",
-        "KC_NO",
-        "LSFT(KC_GRAVE)",
-        "KC_GRAVE",
+        "LSFT(KC_MINUS)",
+        "KC_MINUS",
+        "KC_EQUAL",
+        "LSFT(KC_EQUAL)",
         "KC_LBRACKET",
         "LSFT(KC_LBRACKET)",
         -1
@@ -120,7 +120,7 @@
         "LSFT(KC_8)",
         "LSFT(KC_7)",
         "LSFT(KC_6)",
-        "KC_TRNS"
+        "QK_LLCK"
       ],
       [
         "KC_TRNS",
@@ -132,10 +132,10 @@
         "KC_TRNS"
       ],
       [
-        "KC_TRNS",
-        "KC_SLASH",
-        "KC_DOT",
-        "KC_COMMA",
+        "QK_AREP",
+        "QK_REP",
+        "KC_BSLASH",
+        "LSFT(KC_BSLASH)",
         "KC_RBRACKET",
         "LSFT(KC_RBRACKET)",
         -1
@@ -158,24 +158,24 @@
         "LGUI(KC_3)",
         "LGUI(KC_4)",
         "LGUI(KC_5)",
-        "KC_TRNS"
+        "QK_LLCK"
       ],
       [
         "KC_TRNS",
-        "KC_HOME",
-        "KC_END",
-        "KC_MINUS",
-        "KC_EQUAL",
+        "LGUI(KC_LEFT)",
+        "LGUI(KC_RIGHT)",
+        "LALT(KC_LEFT)",
+        "LALT(KC_RIGHT)",
         "KC_PGDOWN",
         "KC_TRNS"
       ],
       [
         "KC_TRNS",
-        "LSFT(KC_COMMA)",
-        "LSFT(KC_DOT)",
+        "LGUI(KC_Z)",
+        "SGUI(KC_Z)",
         "LGUI(KC_C)",
         "LGUI(KC_V)",
-        "KC_SCOLON",
+        "LGUI(KC_X)",
         -1
       ],
       [
@@ -189,16 +189,16 @@
       ],
       [
         "KC_TRNS",
-        "LSFT(KC_BSLASH)",
-        "KC_BSLASH",
-        "KC_NO",
+        "LGUI(KC_GRAVE)",
+        "SGUI(KC_T)",
+        "LGUI(KC_W)",
         "SGUI(KC_RBRACKET)",
         "SGUI(KC_LBRACKET)",
-        "KC_TRNS"
+        "QK_LLCK"
       ],
       [
         "KC_TRNS",
-        "KC_APPLICATION",
+        "LGUI(KC_TAB)",
         "KC_RIGHT",
         "KC_UP",
         "KC_DOWN",
@@ -232,22 +232,22 @@
         "KC_F4",
         "KC_F5",
         "KC_F6",
-        "KC_NO"
+        "QK_BOOT"
       ],
       [
         "RGB_TOG",
-        "RGB_HUI",
-        "RGB_SAI",
         "RGB_VAI",
-        "KC_NO",
+        "RGB_VAD",
+        "CW_TOGG",
+        "QK_LLCK",
         "KC_NO",
         "KC_NO"
       ],
       [
         "RGB_MOD",
-        "RGB_HUD",
-        "RGB_SAD",
-        "RGB_VAD",
+        "KC_NO",
+        "KC_NO",
+        "KC_NO",
         "KC_NO",
         "KC_NO",
         -1
@@ -281,7 +281,7 @@
       ],
       [
         "KC_TRNS",
-        "QK_BOOT",
+        "KC_NO",
         "KC_NO",
         "KC_NO",
         "KC_NO",
@@ -2268,5 +2268,25 @@
     "25": 100,
     "26": 1,
     "27": 125
-  }
+  },
+  "alt_repeat_key": [
+    {
+      "keycode": "LSFT(KC_1)",
+      "alt_keycode": "KC_EQUAL",
+      "allowed_mods": 0,
+      "options": 8
+    },
+    {
+      "keycode": "KC_MINUS",
+      "alt_keycode": "LSFT(KC_DOT)",
+      "allowed_mods": 0,
+      "options": 8
+    },
+    {
+      "keycode": "KC_EQUAL",
+      "alt_keycode": "LSFT(KC_DOT)",
+      "allowed_mods": 0,
+      "options": 8
+    }
+  ]
 }

@@ -4,55 +4,70 @@ Personal Vial/QMK userspace for the standard Keebart Corne Choc Pro with OLED di
 
 ## Keymap at a glance
 
-`tap/hold` marks dual-role keys. `▽` is transparent and `×` is disabled.
+`tap/hold` marks dual-role keys. `▽` is transparent, `×` is disabled, and `Lock` keeps the active layer on. A locked layer gains `*` on the OLED and unlocks automatically after 60 seconds idle.
 
 ### Base
 
 ```text
- Tab       Q       W       E       R       T     Ctrl | Ctrl      Y       U       I       O       P      Del
+ Tab       Q       W       E       R       T      Rep | ARep      Y       U       I       O       P      Del
 Esc/Nav  A/Ctrl  S/Opt   D/Cmd   F/Shift   G     Opt  | Opt       H     J/Shift K/Cmd   L/Opt   ;/Ctrl    '
  Shift     Z       X       C       V       B               |      N       M       ,       .       /     Function
                     OneCtrl  Enter/Cmd  Tab/Num | Bsp/Nav  Space  OneShift
 ```
 
-The home-row modifiers are macOS CAGS: `Ctrl`, `Option`, `Command`, `Shift`, mirrored across both hands. Tap the Caps position for Escape or hold it for Navigate.
+The home-row modifiers are macOS CAGS: `Ctrl`, `Option`, `Command`, `Shift`, mirrored across both hands. Tap the Caps position for Escape or hold it for Navigate. `Rep` repeats the last key; `ARep` performs its natural opposite.
 
-### Numbers
+### Numbers + symbols
 
-Hold `Tab/Num`:
+Hold `Tab/Num`. Numbers retain their horizontal order while programming symbols are grouped around them:
 
 ```text
-  ▽       !       @       #       $       %      ▽  |  ▽       ^       &       *       (       )       ▽
-  ▽       1       2       3       4       5      ▽  |  ▽       6       7       8       9       0       ▽
-  ▽       ×       ~       `       [       {         |          }       ]       ,       .       /       ▽
+  ~       !       @       #       $       %    Lock | Lock      ^       &       *       (       )       ▽
+  `       1       2       3       4       5      ▽  |  ▽        6       7       8       9       0       ▽
+  _       -       =       +       [       {         |          }       ]     Pipe   Bslash    Rep     ARep
                               ▽       ▽       Num |  ▽       ▽       :
 ```
+
+Braces sit on the two inner index keys, brackets on the next pair, and common operators share the left bottom row. Colon remains on the right outer thumb for Vim commands.
 
 ### Navigate
 
 Hold `Esc/Nav` or `Bsp/Nav`:
 
 ```text
-  ▽    Cmd1   Cmd2   Cmd3   Cmd4   Cmd5    ▽  |  ▽   PrevTab NextTab   ×       \\      |       ▽
-  ▽    Home    End     -      =    PgDn    ▽  |  ▽    Left    Down     Up    Right   Menu     ▽
-  ▽      <      >    Cmd-C  Cmd-V    ;        |      Play    Prev    Next   Vol-    Vol+     ▽
+  ▽    Cmd1   Cmd2   Cmd3   Cmd4   Cmd5   Lock | Lock PrevTab NextTab Close  Reopen  Window    ▽
+  ▽    Line←  Line→  Word←  Word→  PgDn    ▽  |  ▽    Left    Down     Up    Right AppSwitch  ▽
+  ▽    Undo   Redo   Copy   Paste   Cut        |      Play    Prev    Next   Vol-    Vol+      ▽
                               ▽       ▽       ▽ | Nav      ▽       ▽
 ```
 
-The physical H/J/K/L positions become Left/Down/Up/Right. Q–T send `Command+1…5`; Y/U move between tabs.
+- Physical H/J/K/L become Left/Down/Up/Right.
+- Q–T send `Command+1…5`; Y/U send previous/next tab.
+- Line motion is `Command+Left/Right`; word motion is `Option+Left/Right`.
+- Close, Reopen, Window, and AppSwitch send `Command+W`, `Command+Shift+T`, Command+Backtick, and `Command+Tab`.
+- Z/X/C/V/B send Undo, Redo, Copy, Paste, and Cut.
 
-### Function
+### Function + utilities
 
 Tap Function for one key or hold it while pressing another:
 
 ```text
- F1       F2      F3      F4      F5   F6    × | ×    F7   F8   F9   F10  F11  F12
-RGB Tog  Hue+    Sat+    Val+      ×    ×    × | ×     ×    ×    ×     ×    ×    ×
-RGB Mod  Hue-    Sat-    Val-      ×    ×      |      ×    ×    ×     ×   Boot   ▽
-                              ▽     ▽     ▽ | ▽     ▽     ▽
+ F1       F2       F3       F4       F5   F6   Boot | ×    F7   F8   F9   F10  F11  F12
+RGB Tog  Bright+  Bright-  CapsWord Lock   ×     ×  | ×     ×    ×    ×     ×    ×    ×
+RGB Mod     ×        ×        ×       ×    ×        |       ×    ×    ×     ×    ×    ▽
+                                  ▽     ▽     ▽ | ▽     ▽     ▽
 ```
 
-See the [detailed layout guide](docs/layout.md) for shortcuts, layer behavior, and tap-hold tuning.
+Boot is deliberately moved to the inner extension, away from the Function key. Caps Word makes identifiers such as `API_BASE_URL`; the OLED Caps icon stays lit while it is active.
+
+### Repeat behavior
+
+- `Rep` repeats keys with their modifiers: `=` then Rep produces `==`.
+- QMK defaults give `ARep` useful opposites such as J/K, H/L, W/B, arrows, Home/End, Page Up/Down, Backspace/Delete, and matching square or curly brackets.
+- The saved Vial profile adds `!` → `=`, `-` → `>`, and `=` → `>`, making `!=`, `->`, and `=>` two-key rolls.
+- Number and Navigate expose Lock on both inner extension keys. Function uses its physical F position.
+
+See the [detailed layout guide](docs/layout.md) for examples, layer behavior, and tap-hold tuning.
 
 ## Firmware
 
