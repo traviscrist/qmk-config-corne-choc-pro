@@ -1,0 +1,23 @@
+name: Build Corne firmware
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build Vial/QMK userspace
+    uses: qmk/.github/.github/workflows/qmk_userspace_build.yml@01daf5113fa50804558f21cc074ab99ba84ddeaf
+    with:
+      qmk_repo: traviscrist/vial-qmk-keebart
+      qmk_ref: 63e2d6248209f1926e60daa5b950c771cf09d837
+
+  publish:
+    name: Publish firmware
+    if: github.event_name != 'pull_request' && always() && !cancelled()
+    needs: build
+    uses: qmk/.github/.github/workflows/qmk_userspace_publish.yml@01daf5113fa50804558f21cc074ab99ba84ddeaf
