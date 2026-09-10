@@ -35,7 +35,7 @@
         -1,
         -1,
         "OSM(MOD_LCTL)",
-        "USER00",
+        "LGUI_T(KC_ENTER)",
         "LT1(KC_TAB)",
         -1
       ],

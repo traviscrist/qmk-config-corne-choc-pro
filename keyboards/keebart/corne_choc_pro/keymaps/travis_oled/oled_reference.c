@@ -9,23 +9,83 @@ static void write_line(uint8_t row, const char *text) {
     oled_write(text, false);
 }
 
+#define TINY_ROWS(a, b, c, d, e) \
+    ((uint16_t)(a) | ((uint16_t)(b) << 3) | ((uint16_t)(c) << 6) | \
+     ((uint16_t)(d) << 9) | ((uint16_t)(e) << 12))
+
+static uint16_t tiny_glyph(char symbol) {
+    switch (symbol) {
+        case '~': return TINY_ROWS(0, 2, 5, 0, 0);
+        case '!': return TINY_ROWS(2, 2, 2, 0, 2);
+        case '@': return TINY_ROWS(7, 5, 7, 4, 7);
+        case '#': return TINY_ROWS(5, 7, 5, 7, 5);
+        case '$': return TINY_ROWS(2, 7, 6, 3, 7);
+        case '%': return TINY_ROWS(5, 1, 2, 4, 5);
+        case '`': return TINY_ROWS(4, 2, 0, 0, 0);
+        case '(': return TINY_ROWS(2, 4, 4, 4, 2);
+        case ')': return TINY_ROWS(2, 1, 1, 1, 2);
+        case '[': return TINY_ROWS(6, 4, 4, 4, 6);
+        case ']': return TINY_ROWS(3, 1, 1, 1, 3);
+        case '\\': return TINY_ROWS(4, 4, 2, 1, 1);
+        case '_': return TINY_ROWS(0, 0, 0, 0, 7);
+        case '<': return TINY_ROWS(1, 2, 4, 2, 1);
+        case '>': return TINY_ROWS(4, 2, 1, 2, 4);
+        case '{': return TINY_ROWS(2, 4, 6, 4, 2);
+        case '}': return TINY_ROWS(2, 1, 3, 1, 2);
+        case '|': return TINY_ROWS(2, 2, 2, 2, 2);
+        case '=': return TINY_ROWS(0, 7, 0, 7, 0);
+        case '0': return TINY_ROWS(7, 5, 5, 5, 7);
+        case '1': return TINY_ROWS(2, 6, 2, 2, 7);
+        case '2': return TINY_ROWS(7, 1, 7, 4, 7);
+        case '3': return TINY_ROWS(7, 1, 7, 1, 7);
+        case '4': return TINY_ROWS(5, 5, 7, 1, 1);
+        case '5': return TINY_ROWS(7, 4, 7, 1, 7);
+        case '6': return TINY_ROWS(7, 4, 7, 5, 7);
+        case '7': return TINY_ROWS(7, 1, 1, 1, 1);
+        case '8': return TINY_ROWS(7, 5, 7, 5, 7);
+        case '9': return TINY_ROWS(7, 5, 7, 1, 7);
+        case '-': return TINY_ROWS(0, 0, 7, 0, 0);
+        case '*': return TINY_ROWS(5, 2, 7, 2, 5);
+        case '+': return TINY_ROWS(0, 2, 7, 2, 0);
+        case '.': return TINY_ROWS(0, 0, 0, 0, 2);
+        case '/': return TINY_ROWS(1, 1, 2, 4, 4);
+        default: return 0;
+    }
+}
+
+static void write_tiny_key_row(uint8_t page, const char keys[7]) {
+    const uint8_t top = page * 8 + 1;
+
+    for (uint8_t x = 0; x < 32; x++) {
+        for (uint8_t y = page * 8; y < page * 8 + 8; y++) {
+            oled_write_pixel(x, y, false);
+        }
+    }
+
+    for (uint8_t key = 0; key < 6; key++) {
+        const uint16_t glyph = tiny_glyph(keys[key]);
+        const uint8_t left = 1 + key * 5;
+        for (uint8_t y = 0; y < 5; y++) {
+            for (uint8_t x = 0; x < 3; x++) {
+                if (glyph & ((uint16_t)1 << (y * 3 + 2 - x))) {
+                    oled_write_pixel(left + x, top + y, true);
+                }
+            }
+        }
+    }
+}
+
 static void render_raise(bool left) {
     if (left) {
         write_line(0, "RAISE LEFT");
-        write_line(2, "~ ! @");
-        write_line(3, "# $ %");
-        write_line(6, "` ( )");
-        write_line(7, "[ ] \\");
-        write_line(10, "_ < >");
-        write_line(11, "{ } |");
+        write_tiny_key_row(2, "~!@#$%");
+        write_tiny_key_row(6, "`()[]\\");
+        write_tiny_key_row(10, "_<>{}|");
     } else {
         write_line(0, "RAISE RGHT");
-        write_line(2, "= 7 8");
-        write_line(3, "9 -");
-        write_line(6, "* 4 5");
-        write_line(7, "6 +");
-        write_line(10, "0 1 2");
-        write_line(11, "3 . /");
+        write_tiny_key_row(2, "=789- ");
+        write_tiny_key_row(6, "*456+ ");
+        write_tiny_key_row(10, "0123./");
     }
 }
 

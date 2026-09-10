@@ -1,6 +1,5 @@
 #include QMK_KEYBOARD_H
 #include "layers.h"
-#include "oled_user.h"
 
 #define CMD_1 G(KC_1)
 #define CMD_2 G(KC_2)
@@ -24,40 +23,6 @@
 #define CUT G(KC_X)
 #define SCREENSHOT G(S(KC_4))
 
-enum custom_keycodes {
-    CMD_ENTER = QK_KB_0
-};
-
-static bool cmd_enter_held = false;
-static bool cmd_enter_interrupted = false;
-static uint16_t cmd_enter_timer = 0;
-
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-    oled_record_keypress(keycode, record->event.pressed, record->event.key.row);
-
-    if (keycode == CMD_ENTER) {
-        if (record->event.pressed) {
-            cmd_enter_held = true;
-            cmd_enter_interrupted = false;
-            cmd_enter_timer = timer_read();
-            register_weak_mods(MOD_BIT(KC_LGUI));
-        } else {
-            unregister_weak_mods(MOD_BIT(KC_LGUI));
-            if (!cmd_enter_interrupted &&
-                timer_elapsed(cmd_enter_timer) < GET_TAPPING_TERM(keycode, record)) {
-                tap_code(KC_ENT);
-            }
-            cmd_enter_held = false;
-        }
-        return false;
-    }
-
-    if (record->event.pressed && cmd_enter_held) {
-        cmd_enter_interrupted = true;
-    }
-    return true;
-}
-
 // Exempt both layer-tap positions and all thumbs from Chordal Hold's
 // same-hand rule. Home-row mod-taps retain strict left/right handedness.
 const char chordal_hold_layout[MATRIX_ROWS][MATRIX_COLS] PROGMEM =
@@ -77,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         //|--------+------------+------------+------------+------------+--------'  `--------+------------+------------+------------+------------+--------|
             KC_LSFT,       KC_Z,       KC_X,       KC_C,       KC_V,       KC_B,          KC_N,       KC_M,    KC_COMM,     KC_DOT,    KC_SLSH, OSL(_FUNC),
         //|--------+------------+------------+------------+------------+--------.  ,--------+------------+------------+------------+------------+--------|
-                                           OSM(MOD_LCTL),       CMD_ENTER, LT(_NUM, KC_TAB),    LT(_NAV, KC_BSPC), KC_SPC, OSM(MOD_RSFT)
+                                           OSM(MOD_LCTL), LGUI_T(KC_ENT), LT(_NUM, KC_TAB),    LT(_NAV, KC_BSPC), KC_SPC, OSM(MOD_RSFT)
                                        //`--------------------------------------'  `--------------------------------------'
     ),
 

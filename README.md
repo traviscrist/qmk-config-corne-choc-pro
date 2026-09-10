@@ -64,7 +64,7 @@ Boot is on physical B, opposite the Function key. Function+F advances the RGB hu
 
 ### OLED behavior
 
-On Base, both OLEDs center `Base` at the top, show `Left` or `Right` with that half's keypress percentage since power-on in the middle, and place `WPM` over three compact values at the bottom: rolling 25-second average, rolling one-minute average, and the peak 25-second average from the last 24 powered-on hours. Raise, Navigate, and Function replace both screens with per-hand key references.
+On Base, both OLEDs center `Base` at the top, show `Left` or `Right` with that half's keypress percentage since power-on in the middle, and place `WPM` over three compact values at the bottom: rolling 25-second average, rolling one-minute average, and the peak 25-second average from the last 24 powered-on hours. Raise, Navigate, and Function replace both screens with per-hand key references; Raise uses compact glyphs to fit each six-key physical row on one OLED line.
 
 See the [detailed layout guide](docs/layout.md) for examples, layer behavior, and tap-hold tuning.
 
@@ -83,7 +83,7 @@ See [flashing](docs/flashing.md) for bootloader details.
 
 - QWERTY base, optimized for macOS and Vim.
 - macOS CAGS home-row mods: `Ctrl Option Command Shift` from pinky to index, mirrored on the right.
-- QMK Chordal Hold, Permissive Hold, and Flow Tap reduce false holds during typing rolls; the Enter/Command thumb registers Command immediately for reliable shortcuts regardless of release order.
+- QMK Chordal Hold, Permissive Hold, and Flow Tap reduce false holds during typing rolls.
 - Tap the Caps position for Escape; hold it for Navigation.
 - The right inner thumb is a second Navigation/Backspace key.
 - Raise combines left-hand programming symbols with a right-hand numpad.
