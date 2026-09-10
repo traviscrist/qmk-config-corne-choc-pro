@@ -10,7 +10,7 @@
         "KC_E",
         "KC_R",
         "KC_T",
-        "QK_REP"
+        "KC_NO"
       ],
       [
         "LT2(KC_ESCAPE)",
@@ -19,7 +19,7 @@
         "LGUI_T(KC_D)",
         "LSFT_T(KC_F)",
         "KC_G",
-        "KC_LALT"
+        "KC_NO"
       ],
       [
         "KC_LSHIFT",
@@ -46,7 +46,7 @@
         "KC_I",
         "KC_U",
         "KC_Y",
-        "QK_AREP"
+        "KC_NO"
       ],
       [
         "KC_QUOTE",
@@ -55,7 +55,7 @@
         "RGUI_T(KC_K)",
         "RSFT_T(KC_J)",
         "KC_H",
-        "KC_RALT"
+        "KC_NO"
       ],
       [
         "OSL(3)",
@@ -84,7 +84,7 @@
         "LSFT(KC_3)",
         "LSFT(KC_4)",
         "LSFT(KC_5)",
-        "QK_LLCK"
+        "KC_NO"
       ],
       [
         "KC_GRAVE",
@@ -93,7 +93,7 @@
         "KC_LBRACKET",
         "KC_RBRACKET",
         "KC_BSLASH",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "LSFT(KC_MINUS)",
@@ -114,13 +114,13 @@
         -1
       ],
       [
-        "KC_BSPACE",
+        "SGUI(KC_4)",
         "KC_MINUS",
         "KC_9",
         "KC_8",
         "KC_7",
         "KC_EQUAL",
-        "QK_REP"
+        "KC_NO"
       ],
       [
         "KC_ENTER",
@@ -129,7 +129,7 @@
         "KC_5",
         "KC_4",
         "LSFT(KC_8)",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_SLASH",
@@ -158,7 +158,7 @@
         "LGUI(KC_3)",
         "LGUI(KC_4)",
         "LGUI(KC_5)",
-        "QK_LLCK"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -167,7 +167,7 @@
         "LALT(KC_LEFT)",
         "LALT(KC_RIGHT)",
         "KC_PGDOWN",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -194,7 +194,7 @@
         "LGUI(KC_W)",
         "SGUI(KC_RBRACKET)",
         "SGUI(KC_LBRACKET)",
-        "QK_LLCK"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -203,7 +203,7 @@
         "KC_UP",
         "KC_DOWN",
         "KC_LEFT",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -232,14 +232,14 @@
         "KC_F4",
         "KC_F5",
         "KC_F6",
-        "QK_BOOT"
+        "KC_NO"
       ],
       [
         "RGB_TOG",
         "RGB_VAI",
         "RGB_VAD",
         "CW_TOGG",
-        "QK_LLCK",
+        "KC_NO",
         "KC_NO",
         "KC_NO"
       ],
@@ -249,7 +249,7 @@
         "KC_NO",
         "KC_NO",
         "KC_NO",
-        "KC_NO",
+        "QK_BOOT",
         -1
       ],
       [
@@ -306,7 +306,7 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_TRNS",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -315,81 +315,7 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_TRNS",
-        "KC_TRNS"
-      ],
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        -1
-      ],
-      [
-        -1,
-        -1,
-        -1,
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        -1
-      ],
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS"
-      ],
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS"
-      ],
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        -1
-      ],
-      [
-        -1,
-        -1,
-        -1,
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        -1
-      ]
-    ],
-    [
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS"
-      ],
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -416,7 +342,7 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_TRNS",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -425,7 +351,7 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_TRNS",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -454,7 +380,7 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_TRNS",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -463,81 +389,7 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_TRNS",
-        "KC_TRNS"
-      ],
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        -1
-      ],
-      [
-        -1,
-        -1,
-        -1,
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        -1
-      ],
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS"
-      ],
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS"
-      ],
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        -1
-      ],
-      [
-        -1,
-        -1,
-        -1,
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        -1
-      ]
-    ],
-    [
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS"
-      ],
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -564,7 +416,7 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_TRNS",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -573,7 +425,7 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_TRNS",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -602,7 +454,7 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_TRNS",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -611,81 +463,7 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_TRNS",
-        "KC_TRNS"
-      ],
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        -1
-      ],
-      [
-        -1,
-        -1,
-        -1,
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        -1
-      ],
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS"
-      ],
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS"
-      ],
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        -1
-      ],
-      [
-        -1,
-        -1,
-        -1,
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        -1
-      ]
-    ],
-    [
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS"
-      ],
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -712,7 +490,7 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_TRNS",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -721,7 +499,7 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_TRNS",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -750,7 +528,7 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_TRNS",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -759,81 +537,7 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_TRNS",
-        "KC_TRNS"
-      ],
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        -1
-      ],
-      [
-        -1,
-        -1,
-        -1,
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        -1
-      ],
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS"
-      ],
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS"
-      ],
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        -1
-      ],
-      [
-        -1,
-        -1,
-        -1,
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        -1
-      ]
-    ],
-    [
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS"
-      ],
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -860,7 +564,7 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_TRNS",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -869,7 +573,7 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_TRNS",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -898,7 +602,7 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_TRNS",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -907,81 +611,7 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_TRNS",
-        "KC_TRNS"
-      ],
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        -1
-      ],
-      [
-        -1,
-        -1,
-        -1,
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        -1
-      ],
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS"
-      ],
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS"
-      ],
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        -1
-      ],
-      [
-        -1,
-        -1,
-        -1,
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        -1
-      ]
-    ],
-    [
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS"
-      ],
-      [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -1008,7 +638,7 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_TRNS",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -1017,7 +647,7 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_TRNS",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -1046,7 +676,7 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_TRNS",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -1055,7 +685,7 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_TRNS",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -1082,7 +712,7 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_TRNS",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -1091,7 +721,7 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_TRNS",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -1120,7 +750,7 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_TRNS",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -1129,7 +759,7 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_TRNS",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -1156,7 +786,7 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_TRNS",
-        "KC_TRNS"
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -1165,7 +795,377 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_TRNS",
-        "KC_TRNS"
+        "KC_NO"
+      ],
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        -1
+      ],
+      [
+        -1,
+        -1,
+        -1,
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        -1
+      ]
+    ],
+    [
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_NO"
+      ],
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_NO"
+      ],
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        -1
+      ],
+      [
+        -1,
+        -1,
+        -1,
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        -1
+      ],
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_NO"
+      ],
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_NO"
+      ],
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        -1
+      ],
+      [
+        -1,
+        -1,
+        -1,
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        -1
+      ]
+    ],
+    [
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_NO"
+      ],
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_NO"
+      ],
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        -1
+      ],
+      [
+        -1,
+        -1,
+        -1,
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        -1
+      ],
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_NO"
+      ],
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_NO"
+      ],
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        -1
+      ],
+      [
+        -1,
+        -1,
+        -1,
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        -1
+      ]
+    ],
+    [
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_NO"
+      ],
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_NO"
+      ],
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        -1
+      ],
+      [
+        -1,
+        -1,
+        -1,
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        -1
+      ],
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_NO"
+      ],
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_NO"
+      ],
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        -1
+      ],
+      [
+        -1,
+        -1,
+        -1,
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        -1
+      ]
+    ],
+    [
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_NO"
+      ],
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_NO"
+      ],
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        -1
+      ],
+      [
+        -1,
+        -1,
+        -1,
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        -1
+      ],
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_NO"
+      ],
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_NO"
+      ],
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        -1
+      ],
+      [
+        -1,
+        -1,
+        -1,
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        -1
+      ]
+    ],
+    [
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_NO"
+      ],
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_NO"
+      ],
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        -1
+      ],
+      [
+        -1,
+        -1,
+        -1,
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        -1
+      ],
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_NO"
+      ],
+      [
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_NO"
       ],
       [
         "KC_TRNS",
@@ -2269,24 +2269,5 @@
     "26": 1,
     "27": 125
   },
-  "alt_repeat_key": [
-    {
-      "keycode": "LSFT(KC_1)",
-      "alt_keycode": "KC_EQUAL",
-      "allowed_mods": 0,
-      "options": 8
-    },
-    {
-      "keycode": "KC_MINUS",
-      "alt_keycode": "LSFT(KC_DOT)",
-      "allowed_mods": 0,
-      "options": 8
-    },
-    {
-      "keycode": "KC_EQUAL",
-      "alt_keycode": "LSFT(KC_DOT)",
-      "allowed_mods": 0,
-      "options": 8
-    }
-  ]
+  "alt_repeat_key": []
 }

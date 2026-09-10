@@ -118,7 +118,7 @@
     .hand { display: grid; gap: 2px; }
     .row {
       display: grid;
-      grid-template-columns: repeat(7, minmax(0, 1fr));
+      grid-template-columns: repeat(6, minmax(0, 1fr));
       gap: 2px;
     }
     .key {
@@ -204,7 +204,7 @@
         <h1>CORNE CHOC PRO</h1>
         <div class="subtitle">Travis · macOS · Vim · CAGS</div>
       </div>
-      <div class="legend"><strong>tap / hold</strong> appears as two lines &nbsp;·&nbsp; <strong>▽</strong> Base passthrough &nbsp;·&nbsp; <strong>×</strong> disabled<br><strong>Rep</strong> Repeat &nbsp;·&nbsp; <strong>ARep</strong> opposite/paired key &nbsp;·&nbsp; <strong>Lock</strong> keep layer active</div>
+      <div class="legend"><strong>tap / hold</strong> appears as two lines &nbsp;·&nbsp; <strong>▽</strong> Base passthrough &nbsp;·&nbsp; <strong>×</strong> disabled<br><strong>Shot</strong> macOS selection screenshot &nbsp;·&nbsp; Function + B enters the bootloader</div>
     </header>
 
     <section class="layers">
@@ -212,14 +212,14 @@
         <div class="layer-heading"><h2>Base</h2><span class="activation">QWERTY · mirrored CAGS</span></div>
         <div class="hands">
           <div class="hand">
-            <div class="row"><div class="key">Tab</div><div class="key">Q</div><div class="key">W</div><div class="key">E</div><div class="key">R</div><div class="key">T</div><div class="key accent">Rep</div></div>
-            <div class="row"><div class="key accent">Esc<small>hold Nav</small></div><div class="key accent">A<small>hold Ctrl</small></div><div class="key accent">S<small>hold Opt</small></div><div class="key accent">D<small>hold Cmd</small></div><div class="key accent">F<small>hold Shift</small></div><div class="key">G</div><div class="key">Opt</div></div>
-            <div class="row"><div class="key">Shift</div><div class="key">Z</div><div class="key">X</div><div class="key">C</div><div class="key">V</div><div class="key">B</div><div class="key blank"></div></div>
+            <div class="row"><div class="key">Tab</div><div class="key">Q</div><div class="key">W</div><div class="key">E</div><div class="key">R</div><div class="key">T</div></div>
+            <div class="row"><div class="key accent">Esc<small>hold Nav</small></div><div class="key accent">A<small>hold Ctrl</small></div><div class="key accent">S<small>hold Opt</small></div><div class="key accent">D<small>hold Cmd</small></div><div class="key accent">F<small>hold Shift</small></div><div class="key">G</div></div>
+            <div class="row"><div class="key">Shift</div><div class="key">Z</div><div class="key">X</div><div class="key">C</div><div class="key">V</div><div class="key">B</div></div>
           </div>
           <div class="hand">
-            <div class="row"><div class="key accent">ARep</div><div class="key">Y</div><div class="key">U</div><div class="key">I</div><div class="key">O</div><div class="key">P</div><div class="key">Del</div></div>
-            <div class="row"><div class="key">Opt</div><div class="key">H</div><div class="key accent">J<small>hold Shift</small></div><div class="key accent">K<small>hold Cmd</small></div><div class="key accent">L<small>hold Opt</small></div><div class="key accent">;<small>hold Ctrl</small></div><div class="key">'</div></div>
-            <div class="row"><div class="key blank"></div><div class="key">N</div><div class="key">M</div><div class="key">,</div><div class="key">.</div><div class="key">/</div><div class="key accent">Fn</div></div>
+            <div class="row"><div class="key">Y</div><div class="key">U</div><div class="key">I</div><div class="key">O</div><div class="key">P</div><div class="key">Del</div></div>
+            <div class="row"><div class="key">H</div><div class="key accent">J<small>hold Shift</small></div><div class="key accent">K<small>hold Cmd</small></div><div class="key accent">L<small>hold Opt</small></div><div class="key accent">;<small>hold Ctrl</small></div><div class="key">'</div></div>
+            <div class="row"><div class="key">N</div><div class="key">M</div><div class="key">,</div><div class="key">.</div><div class="key">/</div><div class="key accent">Fn</div></div>
           </div>
         </div>
         <div class="thumbs"><div class="key">1× Ctrl</div><div class="key accent">Enter<small>hold Cmd</small></div><div class="key accent">Tab<small>hold Raise</small></div><div class="key accent">Bsp<small>hold Nav</small></div><div class="key">Space</div><div class="key">1× Shift</div></div>
@@ -230,32 +230,32 @@
         <div class="layer-heading"><h2>Raise</h2><span class="activation">hold left Tab / Raise thumb</span></div>
         <div class="hands">
           <div class="hand">
-            <div class="row"><div class="key">~</div><div class="key">!</div><div class="key">@</div><div class="key">#</div><div class="key">$</div><div class="key">%</div><div class="key accent">Lock</div></div>
-            <div class="row"><div class="key">`</div><div class="key">(</div><div class="key">)</div><div class="key">[</div><div class="key">]</div><div class="key">\</div><div class="key transparent">▽</div></div>
-            <div class="row"><div class="key">_</div><div class="key">&lt;</div><div class="key">&gt;</div><div class="key">{</div><div class="key">}</div><div class="key">|</div><div class="key blank"></div></div>
+            <div class="row"><div class="key">~</div><div class="key">!</div><div class="key">@</div><div class="key">#</div><div class="key">$</div><div class="key">%</div></div>
+            <div class="row"><div class="key">`</div><div class="key">(</div><div class="key">)</div><div class="key">[</div><div class="key">]</div><div class="key">\</div></div>
+            <div class="row"><div class="key">_</div><div class="key">&lt;</div><div class="key">&gt;</div><div class="key">{</div><div class="key">}</div><div class="key">|</div></div>
           </div>
           <div class="hand">
-            <div class="row"><div class="key accent">Rep</div><div class="key">=</div><div class="key accent">7</div><div class="key accent">8</div><div class="key accent">9</div><div class="key">−</div><div class="key">Bsp</div></div>
-            <div class="row"><div class="key transparent">▽</div><div class="key">*</div><div class="key accent">4</div><div class="key accent">5</div><div class="key accent">6</div><div class="key">+</div><div class="key">Enter</div></div>
-            <div class="row"><div class="key blank"></div><div class="key accent">0</div><div class="key accent">1</div><div class="key accent">2</div><div class="key accent">3</div><div class="key">.</div><div class="key">/</div></div>
+            <div class="row"><div class="key">=</div><div class="key accent">7</div><div class="key accent">8</div><div class="key accent">9</div><div class="key">−</div><div class="key accent">Shot</div></div>
+            <div class="row"><div class="key">*</div><div class="key accent">4</div><div class="key accent">5</div><div class="key accent">6</div><div class="key">+</div><div class="key">Enter</div></div>
+            <div class="row"><div class="key accent">0</div><div class="key accent">1</div><div class="key accent">2</div><div class="key accent">3</div><div class="key">.</div><div class="key">/</div></div>
           </div>
         </div>
         <div class="thumbs"><div class="key transparent">▽</div><div class="key transparent">▽</div><div class="key accent">Raise</div><div class="key transparent">▽</div><div class="key transparent">▽</div><div class="key">:</div></div>
-        <p class="layer-note"><strong>Left:</strong> adjacent delimiter pairs. <strong>Right:</strong> 789 / 456 / 123 numpad. Lock times out after 60 seconds idle.</p>
+        <p class="layer-note"><strong>Left:</strong> adjacent delimiter pairs. <strong>Right:</strong> 789 / 456 / 123 numpad. Shot sends ⌘⇧4; thumb Backspace remains available.</p>
       </article>
 
       <article class="layer nav">
         <div class="layer-heading"><h2>Navigate</h2><span class="activation">hold Esc / Nav or Bsp / Nav</span></div>
         <div class="hands">
           <div class="hand">
-            <div class="row"><div class="key transparent">▽</div><div class="key">⌘1</div><div class="key">⌘2</div><div class="key">⌘3</div><div class="key">⌘4</div><div class="key">⌘5</div><div class="key accent">Lock</div></div>
-            <div class="row"><div class="key transparent">▽</div><div class="key">Line ←</div><div class="key">Line →</div><div class="key">Word ←</div><div class="key">Word →</div><div class="key">PgDn</div><div class="key transparent">▽</div></div>
-            <div class="row"><div class="key transparent">▽</div><div class="key">Undo</div><div class="key">Redo</div><div class="key">Copy</div><div class="key">Paste</div><div class="key">Cut</div><div class="key blank"></div></div>
+            <div class="row"><div class="key transparent">▽</div><div class="key">⌘1</div><div class="key">⌘2</div><div class="key">⌘3</div><div class="key">⌘4</div><div class="key">⌘5</div></div>
+            <div class="row"><div class="key transparent">▽</div><div class="key">Line ←</div><div class="key">Line →</div><div class="key">Word ←</div><div class="key">Word →</div><div class="key">PgDn</div></div>
+            <div class="row"><div class="key transparent">▽</div><div class="key">Undo</div><div class="key">Redo</div><div class="key">Copy</div><div class="key">Paste</div><div class="key">Cut</div></div>
           </div>
           <div class="hand">
-            <div class="row"><div class="key accent">Lock</div><div class="key">PrevTab</div><div class="key">NextTab</div><div class="key">Close</div><div class="key">Reopen</div><div class="key">Window</div><div class="key transparent">▽</div></div>
-            <div class="row"><div class="key transparent">▽</div><div class="key accent">←</div><div class="key accent">↓</div><div class="key accent">↑</div><div class="key accent">→</div><div class="key">AppSwitch</div><div class="key transparent">▽</div></div>
-            <div class="row"><div class="key blank"></div><div class="key">Play</div><div class="key">Prev</div><div class="key">Next</div><div class="key">Vol−</div><div class="key">Vol+</div><div class="key transparent">▽</div></div>
+            <div class="row"><div class="key">PrevTab</div><div class="key">NextTab</div><div class="key">Close</div><div class="key">Reopen</div><div class="key">Window</div><div class="key transparent">▽</div></div>
+            <div class="row"><div class="key accent">←</div><div class="key accent">↓</div><div class="key accent">↑</div><div class="key accent">→</div><div class="key">AppSwitch</div><div class="key transparent">▽</div></div>
+            <div class="row"><div class="key">Play</div><div class="key">Prev</div><div class="key">Next</div><div class="key">Vol−</div><div class="key">Vol+</div><div class="key transparent">▽</div></div>
           </div>
         </div>
         <div class="thumbs"><div class="key transparent">▽</div><div class="key transparent">▽</div><div class="key transparent">▽</div><div class="key accent">Nav</div><div class="key transparent">▽</div><div class="key transparent">▽</div></div>
@@ -266,18 +266,18 @@
         <div class="layer-heading"><h2>Function</h2><span class="activation">tap or hold bottom-right Function</span></div>
         <div class="hands">
           <div class="hand">
-            <div class="row"><div class="key">F1</div><div class="key">F2</div><div class="key">F3</div><div class="key">F4</div><div class="key">F5</div><div class="key">F6</div><div class="key accent">Boot</div></div>
-            <div class="row"><div class="key">RGB</div><div class="key">Bright+</div><div class="key">Bright−</div><div class="key accent">CapsWord</div><div class="key accent">Lock</div><div class="key disabled">×</div><div class="key disabled">×</div></div>
-            <div class="row"><div class="key">RGB Mode</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key blank"></div></div>
+            <div class="row"><div class="key">F1</div><div class="key">F2</div><div class="key">F3</div><div class="key">F4</div><div class="key">F5</div><div class="key">F6</div></div>
+            <div class="row"><div class="key">RGB</div><div class="key">Bright+</div><div class="key">Bright−</div><div class="key accent">CapsWord</div><div class="key disabled">×</div><div class="key disabled">×</div></div>
+            <div class="row"><div class="key">RGB Mode</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key accent">Boot</div></div>
           </div>
           <div class="hand">
-            <div class="row"><div class="key disabled">×</div><div class="key">F7</div><div class="key">F8</div><div class="key">F9</div><div class="key">F10</div><div class="key">F11</div><div class="key">F12</div></div>
-            <div class="row"><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div></div>
-            <div class="row"><div class="key blank"></div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key transparent">▽</div></div>
+            <div class="row"><div class="key">F7</div><div class="key">F8</div><div class="key">F9</div><div class="key">F10</div><div class="key">F11</div><div class="key">F12</div></div>
+            <div class="row"><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div></div>
+            <div class="row"><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key transparent">▽</div></div>
           </div>
         </div>
         <div class="thumbs"><div class="key transparent">▽</div><div class="key transparent">▽</div><div class="key transparent">▽</div><div class="key transparent">▽</div><div class="key transparent">▽</div><div class="key transparent">▽</div></div>
-        <p class="layer-note"><strong>Caps Word:</strong> Function + physical D. <strong>Lock:</strong> Function + physical F. Boot is isolated on the upper inner extension.</p>
+        <p class="layer-note"><strong>Caps Word:</strong> Function + physical D. <strong>Boot:</strong> Function + physical B, opposite the activation key.</p>
       </article>
     </section>
 

@@ -12,7 +12,7 @@ Use one method per half:
 
 - Hold the physical **Q** key on the left half or **P** key on the right half while connecting that half directly by USB. These are beside Tab and Delete—not the outermost keys.
 - Through the underside holes, hold **BOOT**, tap **RESET**, then release **BOOT**.
-- Activate Function and press the bootloader key on the upper left inner extension (`Rep` on Base).
+- Activate Function and press physical **B**.
 
 A removable RP2040 volume appears. Copy the same UF2 to each half separately, then reconnect the halves while USB is disconnected.
 
@@ -24,21 +24,20 @@ Firmware keymaps provide the four default layers. Dynamic QMK settings live in k
 2. Choose **File → Load saved layout**.
 3. Load `vial/corne-choc-pro.vil` from this repository.
 4. Confirm **QMK Settings → Tap-Hold** shows Chordal Hold and Permissive Hold enabled, Hold on Other Key Press disabled, Flow Tap 125 ms, tapping term 250 ms, and quick-tap term 100 ms.
-5. Confirm **Alt Repeat Key** includes `! → =`, `- → >`, and `= → >`.
 
-Loading the profile also restores the keymap and custom Alternate Repeat table after an EEPROM reset.
+Loading the profile also restores the keymap after an EEPROM reset.
 
 ## Hardware checks
 
-- Both halves type and show the same active layer.
-- OLED labels change between Base, Raise, Navigate, and Function.
+- Both halves type and show Base status after startup.
+- Raise, Navigate, and Function replace both OLED screens with per-hand references.
 - Each CAGS home-row key types on tap and modifies an opposite-hand key on hold.
 - Same-hand rolls such as `asdf`, `jkl`, and `ion` produce letters, not modifiers.
 - Caps tap sends Escape; Caps hold plus H/J/K/L sends arrows.
 - Navigation Q/W sends Command+1/2; Y/U sends previous/next tab.
-- Raise produces `789/456/123`, zero, decimal point, operators, Backspace, and Enter from the documented right-hand positions.
+- Raise produces `789/456/123`, zero, decimal point, operators, and Enter from the documented right-hand positions.
+- Raise's `Shot` key opens macOS screenshot selection; Backspace remains available on the right inner thumb.
 - Raise's parentheses, brackets, braces, angle brackets, pipe, backslash, underscore, colon, backtick, and tilde work without unexpected modifiers.
-- Repeat produces doubled keys; after releasing Raise, Alternate Repeat produces `!=`, `->`, and `=>`.
-- Lock keeps Raise and Navigate active, adds `*` to the OLED layer name, and unlocks on the next Lock tap.
+- The Base right OLED shows `WPM` above the 25-second average, one-minute average, and powered-session 24-hour peak.
 - Function+D toggles Caps Word and the OLED Caps icon follows its state.
 - Navigation line/word movement, Undo/Redo/Copy/Paste/Cut, Close/Reopen, app switching, and window switching send the documented macOS shortcuts.
