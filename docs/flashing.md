@@ -6,13 +6,15 @@ Each push builds the OLED Vial firmware. Download the UF2 from the workflow arti
 
 ## Enter the bootloader
 
+Flash one half at a time over USB; the cable between halves is not required. Disconnect USB power before connecting or disconnecting that cable, and do not power both halves over USB simultaneously.
+
 Use one method per half:
 
-- Hold the outer top key while connecting USB: Q-side key on the left, P-side key on the right.
+- Hold the physical **Q** key on the left half or **P** key on the right half while connecting that half directly by USB. These are beside Tab and Delete—not the outermost keys.
 - Through the underside holes, hold **BOOT**, tap **RESET**, then release **BOOT**.
 - Activate Function and press the bootloader key on the upper left inner extension (`Rep` on Base).
 
-A removable RP2040 volume appears. Copy the same UF2 to each half separately.
+A removable RP2040 volume appears. Copy the same UF2 to each half separately, then reconnect the halves while USB is disconnected.
 
 ## Apply Vial settings
 

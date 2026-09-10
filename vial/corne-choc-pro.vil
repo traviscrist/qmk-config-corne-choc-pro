@@ -71,8 +71,8 @@
         -1,
         -1,
         "OSM(MOD_RSFT)",
-        "KC_SPACE",
         "LT2(KC_BSPACE)",
+        "KC_SPACE",
         -1
       ]
     ],

@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Keebart Corne Choc Pro — Keymap</title>
+  <style>
+    :root {
+      --ink: #17212b;
+      --paper: #f7f3ea;
+      --key: #fffdf8;
+      --line: #b9b1a3;
+      --muted: #756e63;
+      --base: #174b6c;
+      --raise: #a65413;
+      --nav: #23654b;
+      --func: #922f35;
+    }
+
+    @page { size: Letter landscape; margin: 0.25in; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body {
+      background: #d8d4cc;
+      color: var(--ink);
+      font-family: "Avenir Next", Avenir, sans-serif;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+    .sheet {
+      width: 10.5in;
+      height: 8in;
+      margin: 0 auto;
+      padding: 0.12in 0.16in 0.1in;
+      background:
+        radial-gradient(circle at 90% 4%, rgba(166,84,19,.08), transparent 20%),
+        linear-gradient(135deg, rgba(23,75,108,.045), transparent 42%),
+        var(--paper);
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 0.09in;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      border-bottom: 2px solid var(--ink);
+      padding: 0 0.03in 0.07in;
+    }
+    h1 {
+      margin: 0;
+      font-size: 20pt;
+      line-height: 1;
+      letter-spacing: .055em;
+      font-weight: 800;
+    }
+    .subtitle {
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 7.5pt;
+      font-weight: 650;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    .legend {
+      max-width: 4.6in;
+      text-align: right;
+      color: var(--muted);
+      font-size: 7.2pt;
+      line-height: 1.35;
+    }
+    .legend strong { color: var(--ink); }
+
+    .layers {
+      min-height: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 0.1in;
+    }
+    .layer {
+      --accent: var(--base);
+      position: relative;
+      min-height: 0;
+      border: 1.5px solid var(--ink);
+      border-top: 5px solid var(--accent);
+      border-radius: 7px;
+      padding: 0.07in 0.075in;
+      background: rgba(255,253,248,.78);
+      break-inside: avoid;
+    }
+    .layer.raise { --accent: var(--raise); }
+    .layer.nav { --accent: var(--nav); }
+    .layer.func { --accent: var(--func); }
+    .layer-heading {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 0.045in;
+    }
+    h2 {
+      margin: 0;
+      font-size: 11pt;
+      line-height: 1;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .activation {
+      color: var(--accent);
+      font-size: 7pt;
+      font-weight: 750;
+    }
+    .hands {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.12in;
+    }
+    .hand { display: grid; gap: 2px; }
+    .row {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 2px;
+    }
+    .key {
+      height: 0.34in;
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-bottom-width: 2px;
+      border-radius: 4px;
+      background: var(--key);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      text-align: center;
+      font-family: "SFMono-Regular", Menlo, monospace;
+      font-size: 7pt;
+      font-weight: 750;
+      line-height: 1.03;
+      overflow-wrap: anywhere;
+      white-space: normal;
+    }
+    .key small {
+      color: var(--accent);
+      font-family: "Avenir Next", Avenir, sans-serif;
+      font-size: 5pt;
+      font-weight: 750;
+      letter-spacing: .01em;
+    }
+    .key.accent {
+      border-color: color-mix(in srgb, var(--accent) 55%, var(--line));
+      background: color-mix(in srgb, var(--accent) 9%, var(--key));
+    }
+    .key.transparent { color: #aaa296; background: #efebe3; border-style: dashed; }
+    .key.disabled {
+      color: #8e887d;
+      background: repeating-linear-gradient(135deg, #f4f0e8, #f4f0e8 5px, #e8e2d8 5px, #e8e2d8 6px);
+    }
+    .key.blank { visibility: hidden; }
+    .thumbs {
+      width: 60%;
+      margin: 3px auto 0;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 3px;
+    }
+    .thumbs .key { height: 0.32in; }
+    .layer-note {
+      margin: 0.045in 0.01in 0;
+      color: var(--muted);
+      font-size: 6.3pt;
+      line-height: 1.28;
+    }
+    .layer-note strong { color: var(--ink); }
+    footer {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: .15in;
+      border-top: 1px solid var(--line);
+      padding: .055in .02in 0;
+      color: var(--muted);
+      font-size: 6.6pt;
+      line-height: 1.25;
+    }
+    footer strong { color: var(--ink); }
+    .revision { font-family: "SFMono-Regular", Menlo, monospace; font-size: 6pt; }
+
+    @media screen {
+      body { padding: 24px; }
+      .sheet { box-shadow: 0 12px 36px rgba(23,33,43,.22); }
+    }
+    @media print {
+      body { background: white; }
+      .sheet { margin: 0; }
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <header>
+      <div>
+        <h1>CORNE CHOC PRO</h1>
+        <div class="subtitle">Travis · macOS · Vim · CAGS</div>
+      </div>
+      <div class="legend"><strong>tap / hold</strong> appears as two lines &nbsp;·&nbsp; <strong>▽</strong> Base passthrough &nbsp;·&nbsp; <strong>×</strong> disabled<br><strong>Rep</strong> Repeat &nbsp;·&nbsp; <strong>ARep</strong> opposite/paired key &nbsp;·&nbsp; <strong>Lock</strong> keep layer active</div>
+    </header>
+
+    <section class="layers">
+      <article class="layer base">
+        <div class="layer-heading"><h2>Base</h2><span class="activation">QWERTY · mirrored CAGS</span></div>
+        <div class="hands">
+          <div class="hand">
+            <div class="row"><div class="key">Tab</div><div class="key">Q</div><div class="key">W</div><div class="key">E</div><div class="key">R</div><div class="key">T</div><div class="key accent">Rep</div></div>
+            <div class="row"><div class="key accent">Esc<small>hold Nav</small></div><div class="key accent">A<small>hold Ctrl</small></div><div class="key accent">S<small>hold Opt</small></div><div class="key accent">D<small>hold Cmd</small></div><div class="key accent">F<small>hold Shift</small></div><div class="key">G</div><div class="key">Opt</div></div>
+            <div class="row"><div class="key">Shift</div><div class="key">Z</div><div class="key">X</div><div class="key">C</div><div class="key">V</div><div class="key">B</div><div class="key blank"></div></div>
+          </div>
+          <div class="hand">
+            <div class="row"><div class="key accent">ARep</div><div class="key">Y</div><div class="key">U</div><div class="key">I</div><div class="key">O</div><div class="key">P</div><div class="key">Del</div></div>
+            <div class="row"><div class="key">Opt</div><div class="key">H</div><div class="key accent">J<small>hold Shift</small></div><div class="key accent">K<small>hold Cmd</small></div><div class="key accent">L<small>hold Opt</small></div><div class="key accent">;<small>hold Ctrl</small></div><div class="key">'</div></div>
+            <div class="row"><div class="key blank"></div><div class="key">N</div><div class="key">M</div><div class="key">,</div><div class="key">.</div><div class="key">/</div><div class="key accent">Fn</div></div>
+          </div>
+        </div>
+        <div class="thumbs"><div class="key">1× Ctrl</div><div class="key accent">Enter<small>hold Cmd</small></div><div class="key accent">Tab<small>hold Raise</small></div><div class="key">Space</div><div class="key accent">Bsp<small>hold Nav</small></div><div class="key">1× Shift</div></div>
+        <p class="layer-note"><strong>Home row:</strong> A/S/D/F = Ctrl/Opt/Cmd/Shift; mirrored on J/K/L/;. Tap Caps-position for Escape.</p>
+      </article>
+
+      <article class="layer raise">
+        <div class="layer-heading"><h2>Raise</h2><span class="activation">hold left Tab / Raise thumb</span></div>
+        <div class="hands">
+          <div class="hand">
+            <div class="row"><div class="key">~</div><div class="key">!</div><div class="key">@</div><div class="key">#</div><div class="key">$</div><div class="key">%</div><div class="key accent">Lock</div></div>
+            <div class="row"><div class="key">`</div><div class="key">(</div><div class="key">)</div><div class="key">[</div><div class="key">]</div><div class="key">\</div><div class="key transparent">▽</div></div>
+            <div class="row"><div class="key">_</div><div class="key">&lt;</div><div class="key">&gt;</div><div class="key">{</div><div class="key">}</div><div class="key">|</div><div class="key blank"></div></div>
+          </div>
+          <div class="hand">
+            <div class="row"><div class="key accent">Rep</div><div class="key">=</div><div class="key accent">7</div><div class="key accent">8</div><div class="key accent">9</div><div class="key">−</div><div class="key">Bsp</div></div>
+            <div class="row"><div class="key transparent">▽</div><div class="key">*</div><div class="key accent">4</div><div class="key accent">5</div><div class="key accent">6</div><div class="key">+</div><div class="key">Enter</div></div>
+            <div class="row"><div class="key blank"></div><div class="key accent">0</div><div class="key accent">1</div><div class="key accent">2</div><div class="key accent">3</div><div class="key">.</div><div class="key">/</div></div>
+          </div>
+        </div>
+        <div class="thumbs"><div class="key transparent">▽</div><div class="key transparent">▽</div><div class="key accent">Raise</div><div class="key transparent">▽</div><div class="key transparent">▽</div><div class="key">:</div></div>
+        <p class="layer-note"><strong>Left:</strong> adjacent delimiter pairs. <strong>Right:</strong> 789 / 456 / 123 numpad. Lock times out after 60 seconds idle.</p>
+      </article>
+
+      <article class="layer nav">
+        <div class="layer-heading"><h2>Navigate</h2><span class="activation">hold Esc / Nav or Bsp / Nav</span></div>
+        <div class="hands">
+          <div class="hand">
+            <div class="row"><div class="key transparent">▽</div><div class="key">⌘1</div><div class="key">⌘2</div><div class="key">⌘3</div><div class="key">⌘4</div><div class="key">⌘5</div><div class="key accent">Lock</div></div>
+            <div class="row"><div class="key transparent">▽</div><div class="key">Line ←</div><div class="key">Line →</div><div class="key">Word ←</div><div class="key">Word →</div><div class="key">PgDn</div><div class="key transparent">▽</div></div>
+            <div class="row"><div class="key transparent">▽</div><div class="key">Undo</div><div class="key">Redo</div><div class="key">Copy</div><div class="key">Paste</div><div class="key">Cut</div><div class="key blank"></div></div>
+          </div>
+          <div class="hand">
+            <div class="row"><div class="key accent">Lock</div><div class="key">PrevTab</div><div class="key">NextTab</div><div class="key">Close</div><div class="key">Reopen</div><div class="key">Window</div><div class="key transparent">▽</div></div>
+            <div class="row"><div class="key transparent">▽</div><div class="key accent">←</div><div class="key accent">↓</div><div class="key accent">↑</div><div class="key accent">→</div><div class="key">AppSwitch</div><div class="key transparent">▽</div></div>
+            <div class="row"><div class="key blank"></div><div class="key">Play</div><div class="key">Prev</div><div class="key">Next</div><div class="key">Vol−</div><div class="key">Vol+</div><div class="key transparent">▽</div></div>
+          </div>
+        </div>
+        <div class="thumbs"><div class="key transparent">▽</div><div class="key transparent">▽</div><div class="key transparent">▽</div><div class="key transparent">▽</div><div class="key accent">Nav</div><div class="key transparent">▽</div></div>
+        <p class="layer-note"><strong>Vim position:</strong> physical H/J/K/L become ←/↓/↑/→. macOS line, word, tab, app, window, edit, and media actions.</p>
+      </article>
+
+      <article class="layer func">
+        <div class="layer-heading"><h2>Function</h2><span class="activation">tap or hold bottom-right Function</span></div>
+        <div class="hands">
+          <div class="hand">
+            <div class="row"><div class="key">F1</div><div class="key">F2</div><div class="key">F3</div><div class="key">F4</div><div class="key">F5</div><div class="key">F6</div><div class="key accent">Boot</div></div>
+            <div class="row"><div class="key">RGB</div><div class="key">Bright+</div><div class="key">Bright−</div><div class="key accent">CapsWord</div><div class="key accent">Lock</div><div class="key disabled">×</div><div class="key disabled">×</div></div>
+            <div class="row"><div class="key">RGB Mode</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key blank"></div></div>
+          </div>
+          <div class="hand">
+            <div class="row"><div class="key disabled">×</div><div class="key">F7</div><div class="key">F8</div><div class="key">F9</div><div class="key">F10</div><div class="key">F11</div><div class="key">F12</div></div>
+            <div class="row"><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div></div>
+            <div class="row"><div class="key blank"></div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key disabled">×</div><div class="key transparent">▽</div></div>
+          </div>
+        </div>
+        <div class="thumbs"><div class="key transparent">▽</div><div class="key transparent">▽</div><div class="key transparent">▽</div><div class="key transparent">▽</div><div class="key transparent">▽</div><div class="key transparent">▽</div></div>
+        <p class="layer-note"><strong>Caps Word:</strong> Function + physical D. <strong>Lock:</strong> Function + physical F. Boot is isolated on the upper inner extension.</p>
+      </article>
+    </section>
+
+    <footer>
+      <div><strong>Fast paths:</strong> <kbd>Tab/Raise + right thumb</kbd> → colon for Vim &nbsp;·&nbsp; <kbd>K/Cmd + C/V/X/Z</kbd> → macOS shortcuts &nbsp;·&nbsp; <kbd>Caps/Nav + H/J/K/L</kbd> → arrows</div>
+      <div class="revision">qmk-config-corne-choc-pro · Raise numpad</div>
+    </footer>
+  </main>
+</body>
+</html>
