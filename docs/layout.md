@@ -90,10 +90,12 @@ RGB Mod     ×        ×        ×       ×  Boot | ×    ×    ×    ×     × 
                                   ▽     ▽     ▽ | ▽     ▽     ▽
 ```
 
+- Tap the far-right Function key, then tap the listed control; Function is one-shot and does not need to be held.
 - Function+D toggles Caps Word for constants and environment variables.
-- Function+F advances the RGB hue.
+- Function+F advances the RGB hue; repeat until the desired color appears.
 - Function+B enters the bootloader, physically separated from the Function activation key.
-- RGB controls provide toggle, brightness up/down, hue, and mode.
+- Function+Caps toggles RGB, Function+A/S changes brightness, and Function+left Shift cycles effects.
+- Fresh or reset RGB settings start in solid green. RGB changes are saved by QMK.
 
 ## OLED displays
 
