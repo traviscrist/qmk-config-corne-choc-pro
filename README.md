@@ -83,7 +83,7 @@ See [flashing](docs/flashing.md) for bootloader details.
 
 - QWERTY base, optimized for macOS and Vim.
 - macOS CAGS home-row mods: `Ctrl Option Command Shift` from pinky to index, mirrored on the right.
-- QMK Chordal Hold, Permissive Hold, and Flow Tap reduce false holds during typing rolls.
+- QMK Chordal Hold, Permissive Hold, and Flow Tap reduce false holds during typing rolls; the Enter/Command thumb registers Command immediately for reliable shortcuts regardless of release order.
 - Tap the Caps position for Escape; hold it for Navigation.
 - The right inner thumb is a second Navigation/Backspace key.
 - Raise combines left-hand programming symbols with a right-hand numpad.

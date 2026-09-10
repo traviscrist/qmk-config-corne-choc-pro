@@ -22,7 +22,7 @@ The mirrored home-row mods are macOS CAGS:
 
 Use the modifier on the hand opposite the shortcut key. For example, hold K for Command while tapping C, V, X, or Z with the left hand. Chordal Hold keeps same-hand typing rolls literal.
 
-The left and right outer thumbs provide one-shot Control and Shift.
+The left and right outer thumbs provide one-shot Control and Shift. The Enter/Command thumb registers Command immediately when pressed; an isolated quick tap releases Command and sends Enter. This makes shortcuts reliable even when the thumb is released before the shortcut key.
 
 ## Raise: symbols + numpad
 
@@ -118,7 +118,7 @@ The saved Vial profile applies:
 - one-shot timeout: 2000 ms
 - one-shot lock: three taps
 
-Tune Flow Tap first in 25 ms steps. Lower it when a modifier immediately after typing becomes a letter; raise it when quick typing still creates false modifiers.
+Tune Flow Tap in 25 ms steps: lower it when a modifier becomes a letter; raise it when quick typing creates false modifiers. The custom Enter/Command thumb bypasses tap-hold resolution and is unaffected by Flow Tap.
 
 ## MacBook parity
 
