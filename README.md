@@ -14,7 +14,7 @@ Print the one-page keymap: [PDF](docs/corne-choc-pro-keymap.pdf) · [browser ver
  Tab       Q       W       E       R       T      Rep | ARep      Y       U       I       O       P      Del
 Esc/Nav  A/Ctrl  S/Opt   D/Cmd   F/Shift   G     Opt  | Opt       H     J/Shift K/Cmd   L/Opt   ;/Ctrl    '
  Shift     Z       X       C       V       B               |      N       M       ,       .       /     Function
-                    OneCtrl  Enter/Cmd  Tab/Num | Space  Bsp/Nav  OneShift
+                    OneCtrl  Enter/Cmd  Tab/Num | Bsp/Nav  Space  OneShift
 ```
 
 The home-row modifiers are macOS CAGS: `Ctrl`, `Option`, `Command`, `Shift`, mirrored across both hands. Tap the Caps position for Escape or hold it for Navigate. `Rep` repeats the last key; `ARep` performs its natural opposite.
@@ -40,7 +40,7 @@ Hold `Esc/Nav` or `Bsp/Nav`:
   ▽    Cmd1   Cmd2   Cmd3   Cmd4   Cmd5   Lock | Lock PrevTab NextTab Close  Reopen  Window    ▽
   ▽    Line←  Line→  Word←  Word→  PgDn    ▽  |  ▽    Left    Down     Up    Right AppSwitch  ▽
   ▽    Undo   Redo   Copy   Paste   Cut        |      Play    Prev    Next   Vol-    Vol+      ▽
-                              ▽       ▽       ▽ |  ▽      Nav      ▽
+                              ▽       ▽       ▽ | Nav      ▽       ▽
 ```
 
 - Physical H/J/K/L become Left/Down/Up/Right.
@@ -88,7 +88,7 @@ See [flashing](docs/flashing.md) for bootloader details.
 - macOS CAGS home-row mods: `Ctrl Option Command Shift` from pinky to index, mirrored on the right.
 - QMK Chordal Hold, Permissive Hold, and Flow Tap reduce false holds during typing rolls.
 - Tap the Caps position for Escape; hold it for Navigation.
-- The right middle thumb is a second Navigation/Backspace key; Space sits on the stronger inner thumb.
+- The right inner thumb is a second Navigation/Backspace key.
 - Raise combines left-hand programming symbols with a right-hand numpad.
 - Brackets and braces are direct keys—no additional Shift chord.
 - OLEDs show the active Base, Raise, Navigate, or Function layer.

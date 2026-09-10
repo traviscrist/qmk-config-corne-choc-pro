@@ -8,7 +8,7 @@
  Tab       Q       W       E       R       T      Rep | ARep      Y       U       I       O       P      Del
 Esc/Nav  A/Ctrl  S/Opt   D/Cmd   F/Shift   G     Opt  | Opt       H     J/Shift K/Cmd   L/Opt   ;/Ctrl    '
  Shift     Z       X       C       V       B               |      N       M       ,       .       /     Function
-                    OneCtrl  Enter/Cmd  Tab/Num | Space  Bsp/Nav  OneShift
+                    OneCtrl  Enter/Cmd  Tab/Num | Bsp/Nav  Space  OneShift
 ```
 
 The mirrored home-row mods are macOS CAGS:
@@ -55,13 +55,13 @@ Examples:
 
 ## Navigate
 
-Hold the Caps-position `Esc/Nav` key or the right middle `Bsp/Nav` thumb:
+Hold the Caps-position `Esc/Nav` key or the right inner `Bsp/Nav` thumb:
 
 ```text
   ▽    Cmd1   Cmd2   Cmd3   Cmd4   Cmd5   Lock | Lock PrevTab NextTab Close  Reopen  Window    ▽
   ▽    Line←  Line→  Word←  Word→  PgDn    ▽  |  ▽    Left    Down     Up    Right AppSwitch  ▽
   ▽    Undo   Redo   Copy   Paste   Cut        |      Play    Prev    Next   Vol-    Vol+      ▽
-                              ▽       ▽       ▽ |  ▽      Nav      ▽
+                              ▽       ▽       ▽ | Nav      ▽       ▽
 ```
 
 macOS actions:
