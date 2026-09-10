@@ -24,32 +24,34 @@ Use the modifier on the hand opposite the shortcut key. For example, hold K for 
 
 The upper inner extension keys are persistent Repeat and Alternate Repeat. The lower inner extensions remain dedicated Option fallbacks; the left and right outer thumbs provide one-shot Control and Shift.
 
-## Numbers + programming symbols
+## Raise: symbols + numpad
 
 Hold `Tab/Num`:
 
 ```text
-  ~       !       @       #       $       %    Lock | Lock      ^       &       *       (       )       ▽
-  `       1       2       3       4       5      ▽  |  ▽        6       7       8       9       0       ▽
-  _       -       =       +       [       {         |          }       ]     Pipe   Bslash    Rep     ARep
-                              ▽       ▽       Num |  ▽       ▽       :
+  ~       !       @       #       $       %    Lock | Rep      =       7       8       9       -      Bsp
+  `       (       )       [       ]     Bslash   ▽  |  ▽       *       4       5       6       +      Enter
+  _       <       >       {       }      Pipe       |          0       1       2       3       .       /
+                              ▽       ▽     Raise |  ▽       ▽       :
 ```
 
 Design:
 
-- Numbers preserve standard left-to-right order instead of becoming a numpad.
-- `{}` are on the two inner index keys and `[]` on the next pair, making delimiters balanced two-hand rolls.
-- `_ - = +` share one row for shell, TypeScript, Markdown, and Git operators.
-- `|` and `\` are direct keys; base comma, period, and slash are not duplicated.
+- The left `Tab/Num` thumb activates an opposite-hand numpad.
+- Digits use the familiar `789/456/123` shape, with zero beside the bottom row.
+- `= - * + . /`, Backspace, and Enter surround the number block.
+- `()`, `[]`, `{}`, and `<>` are adjacent left-hand delimiter pairs.
+- `\` and `|` share one physical column, while `_`, backtick, tilde, and common shifted-number symbols remain direct.
 - Colon remains on the right outer thumb for Vim command mode.
-- Repeat and Alternate Repeat stay available while entering numbers or symbols.
+- Lock is on the left inner extension; Repeat is on the right inner extension.
 
 Examples:
 
-- `:q`: hold Numbers, tap the right outer thumb for `:`, release, tap Q.
-- `API_BASE_URL`: activate Caps Word, then use the direct underscore key as needed.
-- `!=`, `->`, `=>`: type the first character, then Alternate Repeat.
-- `===`: type `=`, then tap Repeat twice.
+- `:q`: hold Raise, tap the right outer thumb for `:`, release, tap Q.
+- `API_BASE_URL`: activate Caps Word, then use Raise's direct underscore key as needed.
+- `!=`, `->`, `=>`: type the first character, then Alternate Repeat from Base.
+- `123.45`: hold Raise and roll across the right-hand numpad.
+- Long numeric entry: hold Raise, tap Lock, and release the thumb.
 
 ## Navigate
 
@@ -120,9 +122,9 @@ These custom pairs live in Vial's dynamic Alternate Repeat table, so load [`vial
 
 ## Layer Lock
 
-While holding Numbers or Navigate, tap either inner `Lock` key and then release the layer key. The layer remains active until Lock is tapped again or the 60-second idle timeout expires. Function has Lock on its physical F position.
+While holding Raise, tap the left inner `Lock` key; while holding Navigate, tap either inner Lock. Release the layer key and the layer remains active until Lock is tapped again or the 60-second idle timeout expires. Function has Lock on its physical F position.
 
-The OLED adds `*` to a locked layer name, for example `Numbers*`. Caps Word reuses the OLED Caps icon so its state is visible without enabling host Caps Lock.
+The OLED adds `*` to a locked layer name, for example `Raise*`. Caps Word reuses the OLED Caps icon so its state is visible without enabling host Caps Lock.
 
 ## Tap-hold defaults
 
@@ -141,4 +143,4 @@ Tune Flow Tap first in 25 ms steps. Lower it when a modifier immediately after t
 
 ## MacBook parity
 
-The Kanata layout uses the same CAGS home-row mods, Caps/Escape behavior, and Navigate positions on the Apple internal keyboard. Its full number and function rows remain native, so the Corne-only Numbers, Repeat, Layer Lock, RGB, and bootloader controls are not mirrored.
+The Kanata layout uses the same CAGS home-row mods, Caps/Escape behavior, and Navigate positions on the Apple internal keyboard. Its full number and function rows remain native, so the Corne-only Raise/numpad, Repeat, Layer Lock, RGB, and bootloader controls are not mirrored.

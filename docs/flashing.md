@@ -29,13 +29,14 @@ Loading the profile also restores the keymap and custom Alternate Repeat table a
 ## Hardware checks
 
 - Both halves type and show the same active layer.
-- OLED labels change between Base, Numbers, Navigate, and Function.
+- OLED labels change between Base, Raise, Navigate, and Function.
 - Each CAGS home-row key types on tap and modifies an opposite-hand key on hold.
 - Same-hand rolls such as `asdf`, `jkl`, and `ion` produce letters, not modifiers.
 - Caps tap sends Escape; Caps hold plus H/J/K/L sends arrows.
 - Navigation Q/W sends Command+1/2; Y/U sends previous/next tab.
-- Numbers braces, brackets, `_ - = +`, pipe, backslash, colon, backtick, and tilde work without unexpected modifiers.
-- Repeat produces doubled keys; Alternate Repeat produces `!=`, `->`, and `=>`.
-- Lock keeps Numbers and Navigate active, adds `*` to the OLED layer name, and unlocks on the next Lock tap.
+- Raise produces `789/456/123`, zero, decimal point, operators, Backspace, and Enter from the documented right-hand positions.
+- Raise's parentheses, brackets, braces, angle brackets, pipe, backslash, underscore, colon, backtick, and tilde work without unexpected modifiers.
+- Repeat produces doubled keys; after releasing Raise, Alternate Repeat produces `!=`, `->`, and `=>`.
+- Lock keeps Raise and Navigate active, adds `*` to the OLED layer name, and unlocks on the next Lock tap.
 - Function+D toggles Caps Word and the OLED Caps icon follows its state.
 - Navigation line/word movement, Undo/Redo/Copy/Paste/Cut, Close/Reopen, app switching, and window switching send the documented macOS shortcuts.

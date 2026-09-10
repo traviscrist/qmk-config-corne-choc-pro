@@ -17,18 +17,18 @@ Esc/Nav  A/Ctrl  S/Opt   D/Cmd   F/Shift   G     Opt  | Opt       H     J/Shift 
 
 The home-row modifiers are macOS CAGS: `Ctrl`, `Option`, `Command`, `Shift`, mirrored across both hands. Tap the Caps position for Escape or hold it for Navigate. `Rep` repeats the last key; `ARep` performs its natural opposite.
 
-### Numbers + symbols
+### Raise: symbols + numpad
 
-Hold `Tab/Num`. Numbers retain their horizontal order while programming symbols are grouped around them:
+Hold `Tab/Num`. Programming symbols stay on the left while the right hand becomes a numpad:
 
 ```text
-  ~       !       @       #       $       %    Lock | Lock      ^       &       *       (       )       ▽
-  `       1       2       3       4       5      ▽  |  ▽        6       7       8       9       0       ▽
-  _       -       =       +       [       {         |          }       ]     Pipe   Bslash    Rep     ARep
-                              ▽       ▽       Num |  ▽       ▽       :
+  ~       !       @       #       $       %    Lock | Rep      =       7       8       9       -      Bsp
+  `       (       )       [       ]     Bslash   ▽  |  ▽       *       4       5       6       +      Enter
+  _       <       >       {       }      Pipe       |          0       1       2       3       .       /
+                              ▽       ▽     Raise |  ▽       ▽       :
 ```
 
-Braces sit on the two inner index keys, brackets on the next pair, and common operators share the left bottom row. Colon remains on the right outer thumb for Vim commands.
+The left `Tab/Num` thumb activates an opposite-hand `789/456/123` numpad with operators, Backspace, and Enter around it. Paired delimiters occupy adjacent left-hand keys; colon remains on the right outer thumb for Vim commands.
 
 ### Navigate
 
@@ -65,7 +65,7 @@ Boot is deliberately moved to the inner extension, away from the Function key. C
 - `Rep` repeats keys with their modifiers: `=` then Rep produces `==`.
 - QMK defaults give `ARep` useful opposites such as J/K, H/L, W/B, arrows, Home/End, Page Up/Down, Backspace/Delete, and matching square or curly brackets.
 - The saved Vial profile adds `!` → `=`, `-` → `>`, and `=` → `>`, making `!=`, `->`, and `=>` two-key rolls.
-- Number and Navigate expose Lock on both inner extension keys. Function uses its physical F position.
+- Raise exposes Lock on the left inner extension and Repeat on the right; Navigate exposes Lock on both sides. Function uses its physical F position.
 
 See the [detailed layout guide](docs/layout.md) for examples, layer behavior, and tap-hold tuning.
 
@@ -87,9 +87,9 @@ See [flashing](docs/flashing.md) for bootloader details.
 - QMK Chordal Hold, Permissive Hold, and Flow Tap reduce false holds during typing rolls.
 - Tap the Caps position for Escape; hold it for Navigation.
 - The right inner thumb is a second Navigation/Backspace key.
-- Numbers and their symbols retain normal horizontal positions.
+- Raise combines left-hand programming symbols with a right-hand numpad.
 - Brackets and braces are direct keys—no additional Shift chord.
-- OLEDs show the active Base, Numbers, Navigate, or Function layer.
+- OLEDs show the active Base, Raise, Navigate, or Function layer.
 - No `J+K` Escape combo: preserving repeatable Vim `j`/`k` behavior wins over combo novelty.
 
 See [layout](docs/layout.md) for every layer and shortcut.

@@ -129,7 +129,7 @@ void print_current_layer(uint8_t row) {
             strcpy(layer_str, "Base");
             break;
         case _NUM:
-            strcpy(layer_str, "Numbers");
+            strcpy(layer_str, "Raise");
             break;
         case _NAV:
             strcpy(layer_str, "Navigate");

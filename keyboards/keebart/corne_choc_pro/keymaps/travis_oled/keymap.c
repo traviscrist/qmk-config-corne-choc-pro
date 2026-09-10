@@ -47,11 +47,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_NUM] = LAYOUT_split_3x6_3_ex2(
         //,---------------------------------------------------------------------.  ,---------------------------------------------------------------------.
-            KC_TILD, KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC, QK_LLCK,    QK_LLCK, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, _______,
+            KC_TILD, KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC, QK_LLCK,    QK_REP, KC_EQL,    KC_7,    KC_8,    KC_9, KC_MINS, KC_BSPC,
         //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-            KC_GRV,     KC_1,    KC_2,    KC_3,    KC_4,    KC_5, _______,    _______,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0, _______,
+            KC_GRV, KC_LPRN, KC_RPRN, KC_LBRC, KC_RBRC, KC_BSLS, _______,    _______, KC_ASTR,    KC_4,    KC_5,    KC_6, KC_PLUS,  KC_ENT,
         //|--------+--------+--------+--------+--------+--------+--------'  `--------+--------+--------+--------+--------+--------+--------|
-            KC_UNDS, KC_MINS, KC_EQL, KC_PLUS, KC_LBRC, KC_LCBR,                      KC_RCBR, KC_RBRC, KC_PIPE, KC_BSLS, QK_REP, QK_AREP,
+            KC_UNDS, KC_LABK, KC_RABK, KC_LCBR, KC_RCBR, KC_PIPE,                         KC_0,    KC_1,    KC_2,    KC_3,  KC_DOT, KC_SLSH,
         //|--------+--------+--------+--------+--------+--------+--------.  ,--------+--------+--------+--------+--------+--------+--------|
                                                 _______, _______, _______,    _______, _______, KC_COLN
                                             //`--------------------------'  `--------------------------'
