@@ -60,7 +60,7 @@ RGB Mod     ×        ×        ×       ×  Boot | ×    ×    ×    ×     × 
                                   ▽     ▽     ▽ | ▽     ▽     ▽
 ```
 
-Boot is on physical B, opposite the Function key. To change color, tap the far-right Function key and then tap physical F; repeat to advance the hue. Function+left Shift cycles effects, Function+A/S changes brightness, and Function+Caps toggles RGB. Fresh or reset RGB settings start as solid green. Caps Word makes identifiers such as `API_BASE_URL`.
+Boot is on physical B, opposite the Function key. To change color, tap the far-right Function key and then tap physical F; repeat to advance the hue. Function+left Shift cycles effects, Function+A/S changes brightness, and Function+Caps toggles RGB. Fresh or reset RGB settings start as solid green at full brightness. Caps Word makes identifiers such as `API_BASE_URL`.
 
 ### OLED behavior
 
