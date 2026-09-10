@@ -24,13 +24,13 @@ The home-row modifiers are macOS CAGS: `Ctrl`, `Option`, `Command`, `Shift`, mir
 Hold `Tab/Num`. Programming symbols stay on the left while the right hand becomes a numpad:
 
 ```text
-  ~       !       @       #       $       % | =       7       8       9       -      Shot
+  ~       !       @       #       $       % | =       7       8       9       -      Bsp
   `       (       )       [       ]     Bslash | *       4       5       6       +      Enter
   _       <       >       {       }      Pipe | 0       1       2       3       .       /
                               ▽       ▽     Raise |  ▽       ▽       :
 ```
 
-The left `Tab/Num` thumb activates an opposite-hand `789/456/123` numpad with operators and Enter around it. `Shot` sends `Command+Shift+4`; Backspace remains available on the right inner thumb. Paired delimiters occupy adjacent left-hand keys, and colon remains on the right outer thumb for Vim commands.
+The left `Tab/Num` thumb activates an opposite-hand `789/456/123` numpad with operators, Backspace, and Enter around it. Paired delimiters occupy adjacent left-hand keys, and colon remains on the right outer thumb for Vim commands.
 
 ### Navigate
 
@@ -38,14 +38,14 @@ Hold `Esc/Nav` or `Bsp/Nav`:
 
 ```text
   ▽    Cmd1   Cmd2   Cmd3   Cmd4   Cmd5 | PrevTab NextTab Close  Reopen  Window    ▽
-  ▽    Line←  Line→  Word←  Word→  PgDn | Left    Down     Up    Right AppSwitch  ▽
+  ▽    Line←  Line→  Word←  Word→  Shot | Left    Down     Up    Right AppSwitch  ▽
   ▽    Undo   Redo   Copy   Paste   Cut | Play    Prev    Next   Vol-    Vol+      ▽
                               ▽       ▽       ▽ | Nav      ▽       ▽
 ```
 
 - Physical H/J/K/L become Left/Down/Up/Right.
 - Q–T send `Command+1…5`; Y/U send previous/next tab.
-- Line motion is `Command+Left/Right`; word motion is `Option+Left/Right`.
+- Line motion is `Command+Left/Right`; word motion is `Option+Left/Right`; G sends `Command+Shift+4` for screenshot selection.
 - Close, Reopen, Window, and AppSwitch send `Command+W`, `Command+Shift+T`, Command+Backtick, and `Command+Tab`.
 - Z/X/C/V/B send Undo, Redo, Copy, Paste, and Cut.
 
@@ -55,16 +55,16 @@ Tap Function for one key or hold it while pressing another:
 
 ```text
  F1       F2       F3       F4       F5   F6 | F7   F8   F9   F10  F11  F12
-RGB Tog  Bright+  Bright-  CapsWord   ×    × | ×    ×    ×    ×     ×    ×
+RGB Tog  Bright+  Bright-  CapsWord Color  × | ×    ×    ×    ×     ×    ×
 RGB Mod     ×        ×        ×       ×  Boot | ×    ×    ×    ×     ×    ▽
                                   ▽     ▽     ▽ | ▽     ▽     ▽
 ```
 
-Boot is on physical B, opposite the Function key. Caps Word makes identifiers such as `API_BASE_URL`; the OLED Caps icon stays lit while it is active.
+Boot is on physical B, opposite the Function key. Function+F advances the RGB hue. Caps Word makes identifiers such as `API_BASE_URL`.
 
 ### OLED behavior
 
-Base keeps status on the left and shows `WPM` over three compact values on the right: rolling 25-second average, rolling one-minute average, and the peak 25-second average from the last 24 powered-on hours. Raise, Navigate, and Function replace both screens with per-hand key references.
+On Base, both OLEDs center `Base` at the top, show `Left` or `Right` with that half's keypress percentage since power-on in the middle, and place `WPM` over three compact values at the bottom: rolling 25-second average, rolling one-minute average, and the peak 25-second average from the last 24 powered-on hours. Raise, Navigate, and Function replace both screens with per-hand key references.
 
 See the [detailed layout guide](docs/layout.md) for examples, layer behavior, and tap-hold tuning.
 
@@ -88,7 +88,7 @@ See [flashing](docs/flashing.md) for bootloader details.
 - The right inner thumb is a second Navigation/Backspace key.
 - Raise combines left-hand programming symbols with a right-hand numpad.
 - Brackets and braces are direct keys—no additional Shift chord.
-- OLEDs show Base status and WPM history, then switch to per-hand references on Raise, Navigate, and Function.
+- OLEDs show centered Base, per-half usage, and WPM history, then switch to per-hand references on Raise, Navigate, and Function.
 - No `J+K` Escape combo: preserving repeatable Vim `j`/`k` behavior wins over combo novelty.
 
 See [layout](docs/layout.md) for every layer and shortcut.

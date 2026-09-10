@@ -12,20 +12,20 @@ static void write_line(uint8_t row, const char *text) {
 static void render_raise(bool left) {
     if (left) {
         write_line(0, "RAISE LEFT");
-        write_line(2, "~!@#$%");
-        write_line(4, "`()[]\\");
-        write_line(6, "_<>{}|");
-        write_line(10, "HOLD TAB");
-        write_line(11, "L THUMB");
+        write_line(2, "~ ! @");
+        write_line(3, "# $ %");
+        write_line(6, "` ( )");
+        write_line(7, "[ ] \\");
+        write_line(10, "_ < >");
+        write_line(11, "{ } |");
     } else {
         write_line(0, "RAISE RGHT");
-        write_line(2, "=789-SHOT");
-        write_line(4, "*456+ENT");
-        write_line(6, "0123./");
-        write_line(10, "BSP");
-        write_line(11, "R INNER");
-        write_line(13, "COLON");
-        write_line(14, "R OUTER");
+        write_line(2, "= 7 8");
+        write_line(3, "9 -");
+        write_line(6, "* 4 5");
+        write_line(7, "6 +");
+        write_line(10, "0 1 2");
+        write_line(11, "3 . /");
     }
 }
 
@@ -40,7 +40,7 @@ static void render_nav_left(void) {
     write_line(7, "S  LINE>");
     write_line(8, "D  WORD<");
     write_line(9, "F  WORD>");
-    write_line(10, "G  PGDN");
+    write_line(10, "G  SHOT");
     write_line(11, "Z  UNDO");
     write_line(12, "X  REDO");
     write_line(13, "C  COPY");
@@ -80,6 +80,7 @@ static void render_function(bool left) {
         write_line(9, "A BRIGHT+");
         write_line(10, "S BRIGHT-");
         write_line(11, "D CAPSWORD");
+        write_line(12, "F COLOR");
         write_line(13, "SHIFT MODE");
         write_line(15, "B BOOT");
     } else {

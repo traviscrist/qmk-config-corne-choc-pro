@@ -114,7 +114,7 @@
         -1
       ],
       [
-        "SGUI(KC_4)",
+        "KC_BSPACE",
         "KC_MINUS",
         "KC_9",
         "KC_8",
@@ -166,7 +166,7 @@
         "LGUI(KC_RIGHT)",
         "LALT(KC_LEFT)",
         "LALT(KC_RIGHT)",
-        "KC_PGDOWN",
+        "SGUI(KC_4)",
         "KC_NO"
       ],
       [
@@ -239,7 +239,7 @@
         "RGB_VAI",
         "RGB_VAD",
         "CW_TOGG",
-        "KC_NO",
+        "RGB_HUI",
         "KC_NO",
         "KC_NO"
       ],

@@ -35,9 +35,9 @@ Loading the profile also restores the keymap after an EEPROM reset.
 - Same-hand rolls such as `asdf`, `jkl`, and `ion` produce letters, not modifiers.
 - Caps tap sends Escape; Caps hold plus H/J/K/L sends arrows.
 - Navigation Q/W sends Command+1/2; Y/U sends previous/next tab.
-- Raise produces `789/456/123`, zero, decimal point, operators, and Enter from the documented right-hand positions.
-- Raise's `Shot` key opens macOS screenshot selection; Backspace remains available on the right inner thumb.
+- Raise produces `789/456/123`, zero, decimal point, operators, Backspace, and Enter from the documented right-hand positions.
 - Raise's parentheses, brackets, braces, angle brackets, pipe, backslash, underscore, colon, backtick, and tilde work without unexpected modifiers.
-- The Base right OLED shows `WPM` above the 25-second average, one-minute average, and powered-session 24-hour peak.
+- Both Base OLEDs show `WPM` above the 25-second average, one-minute average, and powered-session 24-hour peak; the middle percentages match each half's keypress share.
 - Function+D toggles Caps Word and the OLED Caps icon follows its state.
-- Navigation line/word movement, Undo/Redo/Copy/Paste/Cut, Close/Reopen, app switching, and window switching send the documented macOS shortcuts.
+- Navigation line/word movement, Screenshot, Undo/Redo/Copy/Paste/Cut, Close/Reopen, app switching, and window switching send the documented macOS shortcuts.
+- Function+F advances the RGB hue.

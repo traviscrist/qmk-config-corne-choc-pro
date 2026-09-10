@@ -29,7 +29,7 @@ The left and right outer thumbs provide one-shot Control and Shift.
 Hold `Tab/Num`:
 
 ```text
-  ~       !       @       #       $       % | =       7       8       9       -      Shot
+  ~       !       @       #       $       % | =       7       8       9       -      Bsp
   `       (       )       [       ]     Bslash | *       4       5       6       +      Enter
   _       <       >       {       }      Pipe | 0       1       2       3       .       /
                               ▽       ▽     Raise |  ▽       ▽       :
@@ -39,8 +39,7 @@ Design:
 
 - The left `Tab/Num` thumb activates an opposite-hand numpad.
 - Digits use the familiar `789/456/123` shape, with zero beside the bottom row.
-- `= - * + . /` and Enter surround the number block.
-- `Shot` on the right outer top key sends `Command+Shift+4`; Backspace remains available on the right inner thumb.
+- `= - * + . /`, Backspace, and Enter surround the number block.
 - `()`, `[]`, `{}`, and `<>` are adjacent left-hand delimiter pairs.
 - `\` and `|` share one physical column, while `_`, backtick, tilde, and common shifted-number symbols remain direct.
 - Colon remains on the right outer thumb for Vim command mode.
@@ -50,7 +49,6 @@ Examples:
 - `:q`: hold Raise, tap the right outer thumb for `:`, release, tap Q.
 - `API_BASE_URL`: activate Caps Word, then use Raise's direct underscore key as needed.
 - `123.45`: hold Raise and roll across the right-hand numpad.
-- Screenshot selection: hold Raise and tap the physical Delete position.
 
 ## Navigate
 
@@ -58,7 +56,7 @@ Hold the Caps-position `Esc/Nav` key or the right inner `Bsp/Nav` thumb:
 
 ```text
   ▽    Cmd1   Cmd2   Cmd3   Cmd4   Cmd5 | PrevTab NextTab Close  Reopen  Window    ▽
-  ▽    Line←  Line→  Word←  Word→  PgDn | Left    Down     Up    Right AppSwitch  ▽
+  ▽    Line←  Line→  Word←  Word→  Shot | Left    Down     Up    Right AppSwitch  ▽
   ▽    Undo   Redo   Copy   Paste   Cut | Play    Prev    Next   Vol-    Vol+      ▽
                               ▽       ▽       ▽ | Nav      ▽       ▽
 ```
@@ -75,6 +73,7 @@ macOS actions:
 | AppSwitch | Command+Tab |
 | Line← / Line→ | Command+Left / Command+Right |
 | Word← / Word→ | Option+Left / Option+Right |
+| Shot | Command+Shift+4 |
 | Undo / Redo | Command+Z / Command+Shift+Z |
 | Copy / Paste / Cut | Command+C / Command+V / Command+X |
 
@@ -86,18 +85,19 @@ Tap Function for one Function-layer key or hold it while pressing another:
 
 ```text
  F1       F2       F3       F4       F5   F6 | F7   F8   F9   F10  F11  F12
-RGB Tog  Bright+  Bright-  CapsWord   ×    × | ×    ×    ×    ×     ×    ×
+RGB Tog  Bright+  Bright-  CapsWord Color  × | ×    ×    ×    ×     ×    ×
 RGB Mod     ×        ×        ×       ×  Boot | ×    ×    ×    ×     ×    ▽
                                   ▽     ▽     ▽ | ▽     ▽     ▽
 ```
 
 - Function+D toggles Caps Word for constants and environment variables.
+- Function+F advances the RGB hue.
 - Function+B enters the bootloader, physically separated from the Function activation key.
-- RGB is intentionally limited to toggle, brightness up/down, and mode.
+- RGB controls provide toggle, brightness up/down, hue, and mode.
 
 ## OLED displays
 
-On Base, the left OLED shows layer, Num Lock, Caps Lock/Caps Word, Scroll Lock, the last key, and the QMK logo. The right OLED shows uptime and the Keebart logo. At the bottom, a small `WPM` label sits above three unlabeled values in this order:
+On Base, both OLEDs center `Base` at the top. The middle shows `Left` or `Right` with that half's keypress percentage since power-on beneath it. At the bottom, a small `WPM` label sits above the same three unlabeled values on both screens, in this order:
 
 1. rolling 25-second average
 2. rolling one-minute average

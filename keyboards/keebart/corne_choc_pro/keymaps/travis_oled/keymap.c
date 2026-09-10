@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_NUM] = LAYOUT_split_3x6_3(
         //,-----------------------------------------------------.  ,-----------------------------------------------------.
-            KC_TILD, KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC,    KC_EQL,    KC_7,    KC_8,    KC_9, KC_MINS, SCREENSHOT,
+            KC_TILD, KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC,    KC_EQL,    KC_7,    KC_8,    KC_9, KC_MINS,   KC_BSPC,
         //|--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+----------|
             KC_GRV, KC_LPRN, KC_RPRN, KC_LBRC, KC_RBRC, KC_BSLS,    KC_ASTR,    KC_4,    KC_5,    KC_6, KC_PLUS,    KC_ENT,
         //|--------+--------+--------+--------+--------+--------'  `--------+--------+--------+--------+--------+----------|
@@ -62,7 +62,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         //,-----------------------------------------------------.  ,-----------------------------------------------------.
             _______,   CMD_1,   CMD_2,   CMD_3,   CMD_4,   CMD_5,    TAB_PREV, TAB_NEXT, CLOSE_TAB, REOPEN_TAB, NEXT_WINDOW, _______,
         //|--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+----------|
-            _______, LINE_START, LINE_END, WORD_PREV, WORD_NEXT, KC_PGDN,     KC_LEFT, KC_DOWN,   KC_UP, KC_RGHT, APP_SWITCH, _______,
+            _______, LINE_START, LINE_END, WORD_PREV, WORD_NEXT, SCREENSHOT,     KC_LEFT, KC_DOWN,   KC_UP, KC_RGHT, APP_SWITCH, _______,
         //|--------+--------+--------+--------+--------+--------'  `--------+--------+--------+--------+--------+----------|
             _______,    UNDO,    REDO,    COPY,   PASTE,     CUT,     KC_MPLY, KC_MPRV, KC_MNXT, KC_VOLD, KC_VOLU,   _______,
         //|--------+--------+--------+--------+--------+--------.  ,--------+--------+--------+--------+--------+----------|
@@ -74,7 +74,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         //,-----------------------------------------------------.  ,-----------------------------------------------------.
               KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,      KC_F7,   KC_F8,   KC_F9,  KC_F10,  KC_F11,  KC_F12,
         //|--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------|
-            RGB_TOG, RGB_VAI, RGB_VAD, CW_TOGG, XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+            RGB_TOG, RGB_VAI, RGB_VAD, CW_TOGG, RGB_HUI, XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         //|--------+--------+--------+--------+--------+--------'  `--------+--------+--------+--------+--------+--------|
             RGB_MOD, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, QK_BOOT,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,
         //|--------+--------+--------+--------+--------+--------.  ,--------+--------+--------+--------+--------+--------|
