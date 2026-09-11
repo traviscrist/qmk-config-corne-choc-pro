@@ -156,17 +156,17 @@ static void render_function(bool left) {
 
 void oled_render_layer_reference(uint8_t layer, bool left) {
     switch (layer) {
-        case _NUM:
+        case LAYER_RAISE:
             render_raise(left);
             break;
-        case _NAV:
+        case LAYER_NAV:
             if (left) {
                 render_nav_left();
             } else {
                 render_nav_right();
             }
             break;
-        case _FUNC:
+        case LAYER_FUNCTION:
             render_function(left);
             break;
         default:

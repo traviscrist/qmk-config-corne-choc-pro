@@ -17,7 +17,7 @@ Esc/Nav  A/Ctrl  S/Opt   D/Cmd   F/Shift   G | H     J/Shift K/Cmd   L/Opt   ;/C
                     OneCtrl  Tab/Cmd  Enter/Raise | Space/Nav  Bsp  OneShift
 ```
 
-The home-row modifiers are macOS CAGS: `Ctrl`, `Option`, `Command`, `Shift`, mirrored across both hands. Tap the Caps position for Escape or hold it for Navigate.
+The home-row modifiers are macOS CAGS: `Ctrl`, `Option`, `Command`, `Shift`, mirrored across both hands. The same physical holds remain active on Raise, Navigate, and Function while taps keep each layer's listed action. Tap the Caps position for Escape or hold it for Navigate.
 
 ### Raise: symbols + numpad
 
@@ -84,6 +84,7 @@ See [flashing](docs/flashing.md) for bootloader details.
 - QWERTY base, optimized for macOS and Vim.
 - macOS CAGS home-row mods: `Ctrl Option Command Shift` from pinky to index, mirrored on the right.
 - QMK Chordal Hold, Permissive Hold, and Flow Tap reduce false holds during typing rolls.
+- Physical CAGS home-row holds work on every layer without replacing layer tap actions.
 - Tap the Caps position for Escape; hold it for Navigation.
 - The right inner thumb is a second Navigation/Space key; center-right Backspace repeats normally when held.
 - Raise combines left-hand programming symbols with a right-hand numpad.

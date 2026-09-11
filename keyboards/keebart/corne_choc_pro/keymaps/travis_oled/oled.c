@@ -2,6 +2,7 @@
 #include "layers.h"
 #include "oled_reference.h"
 #include "oled_stats.h"
+#include "oled_user.h"
 
 #ifdef OLED_ENABLE
 #include "bitmaps.h"
@@ -108,17 +109,16 @@ void housekeeping_task_user(void) {
     }
 }
 
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+void oled_record_keypress(uint16_t keycode, bool pressed, uint8_t row) {
     user_ontime = timer_read32();
-    if (record->event.pressed && is_keyboard_master()) {
+    if (pressed && is_keyboard_master()) {
         oled_stats_record_key(keycode);
-        if (record->event.key.row < MATRIX_ROWS / 2) {
+        if (row < MATRIX_ROWS / 2) {
             presses_left++;
         } else {
             presses_right++;
         }
     }
-    return true;
 }
 
 oled_rotation_t oled_init_user(oled_rotation_t rotation) {
@@ -212,7 +212,7 @@ bool oled_task_user(void) {
         rendered_layer = current_layer;
     }
 
-    if (current_layer == _BASE) {
+    if (current_layer == LAYER_BASE) {
         render_base(is_keyboard_left());
     } else {
         oled_render_layer_reference(current_layer, is_keyboard_left());

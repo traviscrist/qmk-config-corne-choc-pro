@@ -8,4 +8,4 @@ OLED_TRANSPORT = i2c
 WPM_ENABLE = yes
 KEYCODE_STRING_ENABLE = yes
 
-SRC += oled.c oled_reference.c oled_stats.c
+SRC += home_row_mods.c oled.c oled_reference.c oled_stats.c

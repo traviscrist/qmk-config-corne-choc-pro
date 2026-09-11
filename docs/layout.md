@@ -22,6 +22,8 @@ The mirrored home-row mods are macOS CAGS:
 
 Use the modifier on the hand opposite the shortcut key. For example, hold K for Command while tapping C, V, X, or Z with the left hand. Chordal Hold keeps same-hand typing rolls literal.
 
+These same physical CAGS holds work on Raise, Navigate, and Function. Tapping still sends the action printed for that layer—for example, Raise+K taps `5` but holding it provides Command; Navigate+J taps Down but holding it provides Shift. Function's unused right-hand home positions do nothing on tap but still provide their modifiers.
+
 The left and right outer thumbs provide one-shot Control and Shift. The other thumbs are `Tab/Cmd`, `Enter/Raise`, `Space/Nav`, and plain Backspace; Backspace repeats normally when held.
 
 ## Raise: symbols + numpad
