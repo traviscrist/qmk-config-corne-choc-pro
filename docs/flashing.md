@@ -32,6 +32,7 @@ Loading the profile also restores the keymap after an EEPROM reset.
 - Both halves type and show Base status after startup.
 - Raise, Navigate, and Function replace both OLED screens with per-hand references.
 - Each CAGS home-row key types on tap and modifies an opposite-hand key on hold.
+- Thumb taps send Tab, Enter, Space, and Backspace; holding Enter activates Raise, holding Space activates Navigate, and holding Backspace repeats it.
 - Same-hand rolls such as `asdf`, `jkl`, and `ion` produce letters, not modifiers.
 - Caps tap sends Escape; Caps hold plus H/J/K/L sends arrows.
 - Navigation Q/W sends Command+1/2; Y/U sends previous/next tab.

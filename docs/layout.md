@@ -8,7 +8,7 @@
  Tab       Q       W       E       R       T | Y       U       I       O       P      Del
 Esc/Nav  A/Ctrl  S/Opt   D/Cmd   F/Shift   G | H     J/Shift K/Cmd   L/Opt   ;/Ctrl    '
  Shift     Z       X       C       V       B | N       M       ,       .       /     Function
-                    OneCtrl  Enter/Cmd  Tab/Num | Bsp/Nav  Space  OneShift
+                    OneCtrl  Tab/Cmd  Enter/Raise | Space/Nav  Bsp  OneShift
 ```
 
 The mirrored home-row mods are macOS CAGS:
@@ -22,11 +22,11 @@ The mirrored home-row mods are macOS CAGS:
 
 Use the modifier on the hand opposite the shortcut key. For example, hold K for Command while tapping C, V, X, or Z with the left hand. Chordal Hold keeps same-hand typing rolls literal.
 
-The left and right outer thumbs provide one-shot Control and Shift.
+The left and right outer thumbs provide one-shot Control and Shift. The other thumbs are `Tab/Cmd`, `Enter/Raise`, `Space/Nav`, and plain Backspace; Backspace repeats normally when held.
 
 ## Raise: symbols + numpad
 
-Hold `Tab/Num`:
+Hold `Enter/Raise`:
 
 ```text
   ~       !       @       #       $       % | =       7       8       9       -      Bsp
@@ -37,7 +37,7 @@ Hold `Tab/Num`:
 
 Design:
 
-- The left `Tab/Num` thumb activates an opposite-hand numpad.
+- The left `Enter/Raise` thumb activates an opposite-hand numpad.
 - Digits use the familiar `789/456/123` shape, with zero beside the bottom row.
 - `= - * + . /`, Backspace, and Enter surround the number block.
 - `()`, `[]`, `{}`, and `<>` are adjacent left-hand delimiter pairs.
@@ -52,7 +52,7 @@ Examples:
 
 ## Navigate
 
-Hold the Caps-position `Esc/Nav` key or the right inner `Bsp/Nav` thumb:
+Hold the Caps-position `Esc/Nav` key or the right inner `Space/Nav` thumb:
 
 ```text
   ▽    Cmd1   Cmd2   Cmd3   Cmd4   Cmd5 | PrevTab NextTab Close  Reopen  Window    ▽

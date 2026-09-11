@@ -14,14 +14,14 @@ Print the one-page keymap: [PDF](docs/corne-choc-pro-keymap.pdf) · [browser ver
  Tab       Q       W       E       R       T | Y       U       I       O       P      Del
 Esc/Nav  A/Ctrl  S/Opt   D/Cmd   F/Shift   G | H     J/Shift K/Cmd   L/Opt   ;/Ctrl    '
  Shift     Z       X       C       V       B | N       M       ,       .       /     Function
-                    OneCtrl  Enter/Cmd  Tab/Num | Bsp/Nav  Space  OneShift
+                    OneCtrl  Tab/Cmd  Enter/Raise | Space/Nav  Bsp  OneShift
 ```
 
 The home-row modifiers are macOS CAGS: `Ctrl`, `Option`, `Command`, `Shift`, mirrored across both hands. Tap the Caps position for Escape or hold it for Navigate.
 
 ### Raise: symbols + numpad
 
-Hold `Tab/Num`. Programming symbols stay on the left while the right hand becomes a numpad:
+Hold `Enter/Raise`. Programming symbols stay on the left while the right hand becomes a numpad:
 
 ```text
   ~       !       @       #       $       % | =       7       8       9       -      Bsp
@@ -30,11 +30,11 @@ Hold `Tab/Num`. Programming symbols stay on the left while the right hand become
                               ▽       ▽     Raise |  ▽       ▽       :
 ```
 
-The left `Tab/Num` thumb activates an opposite-hand `789/456/123` numpad with operators, Backspace, and Enter around it. Paired delimiters occupy adjacent left-hand keys, and colon remains on the right outer thumb for Vim commands.
+The left `Enter/Raise` thumb activates an opposite-hand `789/456/123` numpad with operators, Backspace, and Enter around it. Paired delimiters occupy adjacent left-hand keys, and colon remains on the right outer thumb for Vim commands.
 
 ### Navigate
 
-Hold `Esc/Nav` or `Bsp/Nav`:
+Hold `Esc/Nav` or `Space/Nav`:
 
 ```text
   ▽    Cmd1   Cmd2   Cmd3   Cmd4   Cmd5 | PrevTab NextTab Close  Reopen  Window    ▽
@@ -85,7 +85,7 @@ See [flashing](docs/flashing.md) for bootloader details.
 - macOS CAGS home-row mods: `Ctrl Option Command Shift` from pinky to index, mirrored on the right.
 - QMK Chordal Hold, Permissive Hold, and Flow Tap reduce false holds during typing rolls.
 - Tap the Caps position for Escape; hold it for Navigation.
-- The right inner thumb is a second Navigation/Backspace key.
+- The right inner thumb is a second Navigation/Space key; center-right Backspace repeats normally when held.
 - Raise combines left-hand programming symbols with a right-hand numpad.
 - Brackets and braces are direct keys—no additional Shift chord.
 - OLEDs show centered Base, per-half usage, and WPM history, then switch to per-hand references on Raise, Navigate, and Function.
