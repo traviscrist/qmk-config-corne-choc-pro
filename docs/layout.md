@@ -7,7 +7,7 @@
 ```text
  Tab       Q       W       E       R       T | Y       U       I       O       P      Del
 Esc/Nav  A/Ctrl  S/Opt   D/Cmd   F/Shift   G | H     J/Shift K/Cmd   L/Opt   ;/Ctrl    '
- Shift     Z       X       C       V       B | N       M       ,       .       /     Function
+ Shift     Z       X       C       V       B | N       M       ,       .       /     RShift
                     OneCtrl  Tab/Cmd  Enter/Raise | Space/Nav  Bsp  OneShift
 ```
 
@@ -83,19 +83,20 @@ Physical H/J/K/L remain literal on Base for Vim and become Left/Down/Up/Right on
 
 ## Function + utilities
 
-Tap Function for one Function-layer key or hold it while pressing another:
+Hold `Enter/Raise` and `Space/Nav` together to activate Function:
 
 ```text
  F1       F2       F3       F4       F5   F6 | F7   F8   F9   F10  F11  F12
 RGB Tog  Bright+  Bright-  CapsWord Color  × | ×    ×    ×    ×     ×    ×
 RGB Mod     ×        ×        ×       ×  Boot | ×    ×    ×    ×     ×    ▽
-                                  ▽     ▽     ▽ | ▽     ▽     ▽
+                                  ▽     ▽   Raise | Nav   ▽     ▽
 ```
 
-- Tap the far-right Function key, then tap the listed control; Function is one-shot and does not need to be held.
+- The former far-right Function key is plain Right Shift.
+- Hold both layer thumbs, then tap the listed Function control; releasing either thumb exits Function.
 - Function+D toggles Caps Word for constants and environment variables.
 - Function+F advances the RGB hue; repeat until the desired color appears.
-- Function+B enters the bootloader, physically separated from the Function activation key.
+- Function+B enters the bootloader.
 - Function+Caps toggles RGB, Function+A/S changes brightness, and Function+left Shift cycles effects.
 - Fresh or reset RGB settings start in solid green at full brightness. RGB changes are saved by QMK.
 

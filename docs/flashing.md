@@ -40,6 +40,8 @@ Loading the profile also restores the keymap after an EEPROM reset.
 - Raise produces `789/456/123`, zero, decimal point, operators, Backspace, and Enter from the documented right-hand positions.
 - Raise's parentheses, brackets, braces, angle brackets, pipe, backslash, underscore, colon, backtick, and tilde work without unexpected modifiers.
 - Both Base OLEDs show `WPM` above the 25-second average, one-minute average, and powered-session 24-hour peak; the middle percentages match each half's keypress share.
+- The far-right bottom-row key acts as Right Shift.
+- Holding Enter/Raise and Space/Nav together activates Function; releasing either exits it.
 - Function+D toggles Caps Word and the OLED Caps icon follows its state.
 - Navigation line/word movement, Screenshot, Undo/Redo/Copy/Paste/Cut, Close/Reopen, app switching, and window switching send the documented macOS shortcuts.
 - Function+F advances the RGB hue.

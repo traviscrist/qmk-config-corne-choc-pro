@@ -13,7 +13,7 @@ Print the one-page keymap: [PDF](docs/corne-choc-pro-keymap.pdf) · [browser ver
 ```text
  Tab       Q       W       E       R       T | Y       U       I       O       P      Del
 Esc/Nav  A/Ctrl  S/Opt   D/Cmd   F/Shift   G | H     J/Shift K/Cmd   L/Opt   ;/Ctrl    '
- Shift     Z       X       C       V       B | N       M       ,       .       /     Function
+ Shift     Z       X       C       V       B | N       M       ,       .       /     RShift
                     OneCtrl  Tab/Cmd  Enter/Raise | Space/Nav  Bsp  OneShift
 ```
 
@@ -51,16 +51,16 @@ Hold `Esc/Nav` or `Space/Nav`:
 
 ### Function + utilities
 
-Tap Function for one key or hold it while pressing another:
+Hold `Enter/Raise` and `Space/Nav` together to activate Function:
 
 ```text
  F1       F2       F3       F4       F5   F6 | F7   F8   F9   F10  F11  F12
 RGB Tog  Bright+  Bright-  CapsWord Color  × | ×    ×    ×    ×     ×    ×
 RGB Mod     ×        ×        ×       ×  Boot | ×    ×    ×    ×     ×    ▽
-                                  ▽     ▽     ▽ | ▽     ▽     ▽
+                                  ▽     ▽   Raise | Nav   ▽     ▽
 ```
 
-Boot is on physical B, opposite the Function key. To change color, tap the far-right Function key and then tap physical F; repeat to advance the hue. Function+left Shift cycles effects, Function+A/S changes brightness, and Function+Caps toggles RGB. Fresh or reset RGB settings start as solid green at full brightness. Caps Word makes identifiers such as `API_BASE_URL`.
+The former far-right Function key is now plain Right Shift. To change color, hold both layer thumbs and tap physical F; repeat to advance the hue. Function+left Shift cycles effects, Function+A/S changes brightness, Function+Caps toggles RGB, and Function+B enters the bootloader. Fresh or reset RGB settings start as solid green at full brightness. Caps Word makes identifiers such as `API_BASE_URL`.
 
 ### OLED behavior
 

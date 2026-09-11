@@ -99,16 +99,11 @@ static void tap_layer_action(uint8_t layer, uint8_t index) {
   }
 }
 
-// Capture before QMK consumes the one-shot Function layer or buffers tap-hold
-// events.
+// Capture the source layer before QMK buffers the tap-hold event.
 bool pre_process_record_user(uint16_t keycode, keyrecord_t *record) {
   const uint8_t index = home_row_index(keycode);
   if (index != HRM_INDEX_NONE && record->event.pressed) {
-    uint8_t active_layer = get_highest_layer(layer_state | default_layer_state);
-    if (is_oneshot_layer_active() && get_oneshot_layer() > active_layer) {
-      active_layer = get_oneshot_layer();
-    }
-    pressed_layer[index] = active_layer;
+    pressed_layer[index] = get_highest_layer(layer_state | default_layer_state);
   }
   return true;
 }

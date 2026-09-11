@@ -36,7 +36,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         //|--------+------------+------------+------------+------------+--------|  |--------+------------+------------+------------+------------+--------|
             LT(LAYER_NAV, KC_ESC), LCTL_T(KC_A), LALT_T(KC_S), LGUI_T(KC_D), LSFT_T(KC_F), KC_G,        KC_H, RSFT_T(KC_J), RGUI_T(KC_K), RALT_T(KC_L), RCTL_T(KC_SCLN), KC_QUOT,
         //|--------+------------+------------+------------+------------+--------'  `--------+------------+------------+------------+------------+--------|
-            KC_LSFT,       KC_Z,       KC_X,       KC_C,       KC_V,       KC_B,          KC_N,       KC_M,    KC_COMM,     KC_DOT,    KC_SLSH, OSL(LAYER_FUNCTION),
+            KC_LSFT,       KC_Z,       KC_X,       KC_C,       KC_V,       KC_B,          KC_N,       KC_M,    KC_COMM,     KC_DOT,    KC_SLSH, KC_RSFT,
         //|--------+------------+------------+------------+------------+--------.  ,--------+------------+------------+------------+------------+--------|
                                            OSM(MOD_LCTL), LGUI_T(KC_TAB), LT(LAYER_RAISE, KC_ENT),    LT(LAYER_NAV, KC_SPC), KC_BSPC, OSM(MOD_RSFT)
                                        //`--------------------------------------'  `--------------------------------------'
@@ -77,3 +77,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                       _______, _______, _______,    _______, _______, _______
                                   //`--------------------------'  `--------------------------'
     )};
+
+layer_state_t layer_state_set_user(layer_state_t state) {
+    return update_tri_layer_state(state, LAYER_RAISE, LAYER_NAV, LAYER_FUNCTION);
+}
