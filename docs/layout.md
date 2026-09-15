@@ -8,7 +8,7 @@
  Tab       Q       W       E       R       T | Y       U       I       O       P      Del
 Esc/Nav  A/Ctrl  S/Opt   D/Cmd   F/Shift   G | H     J/Shift K/Cmd   L/Opt   ;/Ctrl    '
  Shift     Z       X       C       V       B | N       M       ,       .       /     RShift
-                    OneCtrl  Tab/Cmd  Enter/Raise | Space/Nav  Bsp  OneShift
+                    OneShift  Tab/Cmd  Enter/Raise | Space/Nav  Bsp  OneShift
 ```
 
 The mirrored home-row mods are macOS CAGS:
@@ -24,7 +24,7 @@ Use the modifier on the hand opposite the shortcut key. For example, hold K for 
 
 These same physical CAGS holds work on Raise, Navigate, and Function. Tapping still sends the action printed for that layer—for example, Raise+K taps `5` but holding it provides Command; Navigate+J taps Down but holding it provides Shift. Function's unused right-hand home positions do nothing on tap but still provide their modifiers.
 
-The left and right outer thumbs provide one-shot Control and Shift. The other thumbs are `Tab/Cmd`, `Enter/Raise`, `Space/Nav`, and plain Backspace; Backspace repeats normally when held.
+The left and right outer thumbs provide one-shot Left and Right Shift. The other thumbs are `Tab/Cmd`, `Enter/Raise`, `Space/Nav`, and plain Backspace; Backspace repeats normally when held.
 
 ## Raise: symbols + numpad
 

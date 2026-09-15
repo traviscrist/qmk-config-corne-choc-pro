@@ -33,7 +33,7 @@ Loading the profile also restores the keymap after an EEPROM reset.
 - Raise, Navigate, and Function replace both OLED screens with per-hand references.
 - Each CAGS home-row key types on tap and modifies an opposite-hand key on hold.
 - On Raise, Navigate, and Function, tapping every CAGS position keeps its documented layer action while holding it produces the same Base modifier.
-- Thumb taps send Tab, Enter, Space, and Backspace; holding Enter activates Raise, holding Space activates Navigate, and holding Backspace repeats it.
+- Both outer thumb taps arm one-shot Shift. The other thumb taps send Tab, Enter, Space, and Backspace; holding Enter activates Raise, holding Space activates Navigate, and holding Backspace repeats it.
 - Same-hand rolls such as `asdf`, `jkl`, and `ion` produce letters, not modifiers.
 - Caps tap sends Escape; Caps hold plus H/J/K/L sends arrows.
 - Navigation Q/W sends Command+1/2; Y/U sends previous/next tab.
